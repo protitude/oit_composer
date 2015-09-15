@@ -17,7 +17,7 @@
         {
           "type": "package",
           "package": {
-            "name": "drmonty/garlicjs",
+            "name": "library/garlicjs",
             "version": "1.2.3",
             "type": "drupal-library",
             "dist": {
@@ -48,7 +48,9 @@
         "drupal/scheduler": "8.*",
         "drupal/token": "8.*",
         "drupal/views_accordion": "8.*",
-        "drupal/webform": "8.*"
+        "drupal/webform": "8.*",
+
+        "library/garlicjs": "1.2.3"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
