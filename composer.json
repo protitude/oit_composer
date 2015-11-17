@@ -25,21 +25,70 @@
               "type": "zip"
             }
           }
+        },
+        {
+          "type": "package",
+          "package": {
+            "name": "drupal/redirect",
+            "version": "8.0",
+            "type": "drupal-module",
+            "dist": {
+              "url": "https://github.com/md-systems/redirect/archive/8.x-1.x.zip",
+              "type": "zip"
+            },
+            "source": {
+                "type": "vcs",
+                "url": "https://github.com/md-systems/redirect.git",
+                "reference": "8.x-1.x"
+            }
+          }
+        },
+        {
+          "type": "package",
+          "package": {
+            "name": "drupal/patches",
+            "version": "1.0.0",
+            "type": "patches",
+            "require": {
+              "netresearch/composer-patches-plugin": "~1.0"
+            },
+            "extra": {
+              "patches": {
+                "drupal/coffee": {
+                  "8.*": {
+                    "dc4196b4e97e11ff24e762d94864132e12daf7be": {
+                      "title": "JS fix",
+                      "url": "https://www.drupal.org/files/issues/coffee-fix_once-2486843-2.patch"
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
     ],
     "require": {
         "composer/installers": "^1.0.20",
         "drupal/core": "8.0.*",
-        "drush/drush": "8.*",
-        "drupal/console": "~0.8",
+        "drupal/patches": "*",
 
+        "drupal/admin_toolbar": "8.*",
+        "drupal/admin_toolbar_tools": "8.*",
         "drupal/backup_migrate": "8.*",
         "drupal/coffee": "8.*",
+        "drupal/colorbox": "8.*",
         "drupal/devel": "8.*",
         "drupal/diff": "8.*",
+        "drupal/editor_file": "8.*",
+        "drupal/extlink": "8.*",
         "drupal/features": "8.*",
+        "drupal/fences": "8.*",
+        "drupal/field_collection": "8.*",
+        "drupal/field_group": "8.*",
+        "drupal/filter_perms": "8.*",
         "drupal/globalredirect": "8.*",
         "drupal/google_analytics_lite": "8.*",
+        "drupal/honeypot": "8.*",
         "drupal/ldap": "8.*",
         "drupal/libraries": "8.*",
         "drupal/mailsystem": "8.*",
@@ -48,6 +97,7 @@
         "drupal/mollom": "8.*",
         "drupal/omega": "8.*",
         "drupal/pathauto": "8.*",
+        "drupal/redirect": "8.*",
         "drupal/scheduler": "8.*",
         "drupal/token": "8.*",
         "drupal/trash": "8.*",
