@@ -75,6 +75,7 @@
         "drupal/admin_toolbar": "8.*",
         "drupal/admin_toolbar_tools": "8.*",
         "drupal/backup_migrate": "8.*",
+        "drupal/big_pipe": "8.*",
         "drupal/coffee": "8.*",
         "drupal/colorbox": "8.*",
         "drupal/devel": "8.*",
