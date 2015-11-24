@@ -7,7 +7,11 @@ if [ ! -f web/sites/default/settings.php ]
     chmod 777 web/sites/default/settings.php
 fi
 
-echo "\$databases['default']['default'] = array (
+echo "/$settings['trusted_host_patterns'] = array(
+  '^drupalvm\.dev',
+);
+\$settings['hash_salt'] = 'rXRqLDFU2Ls4oCohqGu9YX_SrbvT_2cjcCAKqOQqFps';
+\$databases['default']['default'] = array (
   'database' => 'drupal',
   'username' => 'drupal',
   'password' => 'drupal',
