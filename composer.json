@@ -17,130 +17,62 @@
         {
           "type": "package",
           "package": {
-            "name": "library/garlicjs",
-            "version": "1.2.3",
-            "type": "drupal-library",
-            "dist": {
-              "url": "https://github.com/guillaumepotier/Garlic.js/archive/1.2.3.zip",
-              "type": "zip"
-            }
-          }
-        },
-        {
-          "type": "package",
-          "package": {
-            "name": "drupal/redirect",
-            "version": "8.0",
-            "type": "drupal-module",
-            "dist": {
-              "url": "https://github.com/md-systems/redirect/archive/8.x-1.x.zip",
-              "type": "zip"
-            },
-            "source": {
-                "type": "vcs",
-                "url": "https://github.com/md-systems/redirect.git",
-                "reference": "8.x-1.x"
-            }
-          }
-        },
-        {
-          "type": "package",
-          "package": {
             "name": "drupal/zap",
-            "version": "8.0",
             "type": "drupal-profile",
-            "dist": {
-              "url": "https://github.com/protitude/zap/archive/master.zip",
-              "type": "zip"
-            },
+            "version": "master",
             "source": {
-                "type": "vcs",
-                "url": "https://github.com/protitude/zap.git",
-                "reference": "master"
-            }
-          }
-        },
-        {
-          "type": "package",
-          "package": {
-            "name": "drupal/patches",
-            "version": "1.0.0",
-            "type": "patches",
-            "require": {
-              "netresearch/composer-patches-plugin": "~1.0"
-            },
-            "extra": {
-              "patches": {
-                "drupal/coffee": {
-                  "8.*": {
-                    "dc4196b4e97e11ff24e762d94864132e12daf7be": {
-                      "title": "JS fix",
-                      "url": "https://www.drupal.org/files/issues/coffee-fix_once-2486843-2.patch"
-                    }
-                  }
-                }
-              }
+              "type": "git",
+              "url": "https://github.com/protitude/zap.git",
+              "reference": "master"
             }
           }
         }
-    ],
+          ],
     "require": {
         "composer/installers": "^1.0.20",
-        "drupal/core": "8.0.*",
-        "drupal/patches": "*",
-
-        "drupal/admin_toolbar": "8.*",
-        "drupal/admin_toolbar_tools": "8.*",
-        "drupal/backup_migrate": "8.*",
-        "drupal/big_pipe": "8.*",
-        "drupal/coffee": "8.*",
-        "drupal/colorbox": "8.*",
-        "drupal/contact_storage": "8.*",
-        "drupal/devel": "8.*",
-        "drupal/diff": "8.*",
-        "drupal/editor_file": "8.*",
-        "drupal/extlink": "8.*",
-        "drupal/features": "8.*",
-        "drupal/fences": "8.*",
-        "drupal/field_collection": "8.*",
-        "drupal/field_group": "8.*",
-        "drupal/filter_perms": "8.*",
-        "drupal/google_analytics_lite": "8.*",
-        "drupal/honeypot": "8.*",
-        "drupal/ldap": "8.*",
-        "drupal/libraries": "8.*",
-        "drupal/mailsystem": "8.*",
-        "drupal/masquerade": "8.*",
-        "drupal/migrate_manifest": "8.*",
-        "drupal/multiversion": "8.*",
-        "drupal/mollom": "8.*",
-        "drupal/omega": "8.*",
-        "drupal/pathauto": "8.*",
-        "drupal/realname": "8.*",
-        "drupal/redirect": "8.*",
-        "drupal/scheduler": "8.*",
-        "drupal/token": "8.*",
-        "drupal/trash": "8.*",
-        "drupal/views_accordion": "8.*",
-        "drupal/webform": "8.*",
-        "drupal/zap": "8.*",
-
-        "library/garlicjs": "1.2.3"
+        "drupal-composer/drupal-scaffold": "^2.0.1",
+        "cweagans/composer-patches": "~1.0",
+        "drupal/core": "~8.0",
+        "drush/drush": "~8.0",
+        "drupal/console": "~0.10",
+        "drupal/zap": "dev-master"
+    },
+    "require-dev": {
+       "behat/mink": "~1.7",
+        "behat/mink-goutte-driver": "~1.2",
+        "jcalderonzumba/gastonjs": "~1.0.2",
+        "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
+        "mikey179/vfsStream": "~1.2",
+        "phpunit/phpunit": "~4.8",
+        "symfony/css-selector": "~2.8",
+        "drupal/zap": "dev-master"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "autoload": {
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
+        ]
+    },
     "scripts": {
-        "pre-install-cmd": "scripts/composer/pre-install.sh",
-        "post-install-cmd": "scripts/composer/post-install.sh"
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+        "post-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ],
+        "post-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ]
     },
     "extra": {
         "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/profiles/{$name}": ["type:drupal-profile"],
-            "web/libraries/{$name}": ["type:drupal-library"],
-            "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "web/drush/commands/{$name}": ["type:drupal-drush"]
+            "oit/core": ["type:drupal-core"],
+            "oit/modules/contrib/{$name}": ["type:drupal-module"],
+            "oit/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "oit/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/contrib/{$name}": ["type:drupal-drush"]
         }
     }
 }
