@@ -1,0 +1,41 @@
+uuid: 1f7e6242-8223-4a95-8232-873c54b3bbda
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.oit_faq.field_oit_faq_body
+    - field.field.paragraph.oit_faq.field_oit_faq_descriptive_title
+    - field.field.paragraph.oit_faq.field_oit_faq_section_title
+    - paragraphs.paragraphs_type.oit_faq
+  module:
+    - text
+_core:
+  default_config_hash: XugMC0bmG8dKHsDh1fHdAk_H30Zm2tmWAOjJGncB_sg
+id: paragraph.oit_faq.default
+targetEntityType: paragraph
+bundle: oit_faq
+mode: default
+content:
+  field_oit_faq_body:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_oit_faq_descriptive_title:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_oit_faq_section_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden:
+  created: true
+  uid: true

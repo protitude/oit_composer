@@ -1,0 +1,35 @@
+uuid: 9dcf6c2e-55dd-432b-b824-be9a40ffe539
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tut_step.field_tut_step_description
+    - field.field.paragraph.tut_step.field_tut_step_image
+    - paragraphs.paragraphs_type.tut_step
+  module:
+    - image
+    - text
+_core:
+  default_config_hash: j4nTHWZw7Lx2za9eUN9q46d4rJ7W0fDtwo4Zpgp_noc
+id: paragraph.tut_step.default
+targetEntityType: paragraph
+bundle: tut_step
+mode: default
+content:
+  field_tut_step_description:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_tut_step_image:
+    weight: 0
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+hidden:
+  created: true
+  uid: true

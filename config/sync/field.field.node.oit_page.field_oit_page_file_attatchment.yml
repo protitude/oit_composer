@@ -1,0 +1,29 @@
+uuid: ab8d439c-6693-4120-8129-81072a7efcce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oit_page_file_attatchment
+    - node.type.oit_page
+  module:
+    - file
+_core:
+  default_config_hash: StH7dRAsBLaa2l8WHthHmHjoIG9DVfI3QE9Ty1Oe7Ik
+id: node.oit_page.field_oit_page_file_attatchment
+field_name: field_oit_page_file_attatchment
+entity_type: node
+bundle: oit_page
+label: 'File Attatchment'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: page
+  file_extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp tex bib cls zip msi docx xlsx pptx key'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

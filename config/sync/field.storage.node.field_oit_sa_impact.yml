@@ -1,0 +1,21 @@
+uuid: eb5f0f5f-dc4a-452f-a55e-091820007994
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: fg33epfRjuITG4X_rl-92k6KxgWzdryzWodmynXTG48
+id: node.field_oit_sa_impact
+field_name: field_oit_sa_impact
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,119 @@
+uuid: 4c616703-38d4-4bcd-af92-4e36b74e5139
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.oit_tutorial.body
+    - field.field.node.oit_tutorial.field_oit_page_category
+    - field.field.node.oit_tutorial.field_oit_page_file_attatchment
+    - field.field.node.oit_tutorial.field_tut_computer_type
+    - field.field.node.oit_tutorial.field_tut_footer
+    - field.field.node.oit_tutorial.field_tut_related
+    - field.field.node.oit_tutorial.field_tut_steps
+    - field.field.node.oit_tutorial.field_tut_title_alias
+    - node.type.oit_tutorial
+  module:
+    - file
+    - paragraphs
+    - path
+    - text
+_core:
+  default_config_hash: 5_3e9pEimfQy3r95gx_nVlm8gZxFvEGhn1I7d7f_z1I
+id: node.oit_tutorial.default
+targetEntityType: node
+bundle: oit_tutorial
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 8
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+  field_oit_page_category:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_oit_page_file_attatchment:
+    weight: 26
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+  field_tut_computer_type:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_tut_footer:
+    weight: 12
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_tut_related:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_tut_steps:
+    type: entity_reference_paragraphs
+    weight: 13
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+    third_party_settings: {  }
+  field_tut_title_alias:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  path:
+    type: path
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  publish_on: true
+  unpublish_on: true

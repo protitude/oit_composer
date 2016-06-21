@@ -1,0 +1,28 @@
+uuid: c8c2bae3-ecb1-4cab-99f2-7a8a4dc8fcf5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oit_page_related_content
+    - node.type.oit_page
+_core:
+  default_config_hash: zeJdqNSPTzlvTHdX6id3j-EpF8gjLRohDb-1zIHnohY
+id: node.oit_page.field_oit_page_related_content
+field_name: field_oit_page_related_content
+entity_type: node
+bundle: oit_page
+label: 'Related Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      oit_page: oit_page
+    sort:
+      field: title
+      direction: ASC
+field_type: entity_reference

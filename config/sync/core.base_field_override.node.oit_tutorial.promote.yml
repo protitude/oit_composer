@@ -1,0 +1,24 @@
+uuid: b0578024-4dfb-48f9-bbac-ff43b5be8992
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.oit_tutorial
+_core:
+  default_config_hash: wE8RqvP4DItmfMNjsUZkA1Lue_1E1ei5iNngpFC9Ewo
+id: node.oit_tutorial.promote
+field_name: promote
+entity_type: node
+bundle: oit_tutorial
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

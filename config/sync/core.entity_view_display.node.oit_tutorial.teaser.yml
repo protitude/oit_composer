@@ -1,0 +1,42 @@
+uuid: 41efafa4-489a-4ac9-bb6a-b3d0279e78be
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.oit_tutorial.body
+    - field.field.node.oit_tutorial.field_oit_page_category
+    - field.field.node.oit_tutorial.field_oit_page_file_attatchment
+    - field.field.node.oit_tutorial.field_tut_computer_type
+    - field.field.node.oit_tutorial.field_tut_footer
+    - field.field.node.oit_tutorial.field_tut_related
+    - field.field.node.oit_tutorial.field_tut_steps
+    - field.field.node.oit_tutorial.field_tut_title_alias
+    - node.type.oit_tutorial
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: GnZBOq022KOOEWYB3qlzYZOhN80cwNAnVbTVzYrBtr0
+id: node.oit_tutorial.teaser
+targetEntityType: node
+bundle: oit_tutorial
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_oit_page_category: true
+  field_oit_page_file_attatchment: true
+  field_tut_computer_type: true
+  field_tut_footer: true
+  field_tut_related: true
+  field_tut_steps: true
+  field_tut_title_alias: true

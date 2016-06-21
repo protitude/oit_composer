@@ -1,0 +1,32 @@
+uuid: b02902d6-7489-4c43-ae89-400660bc1251
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oit_faq
+    - node.type.oit_page
+    - paragraphs.paragraphs_type.oit_faq
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: KeX-Fg3JfJX2SkYI5wKvaSum1k0U2eID-8Y3dKhm8No
+id: node.oit_page.field_oit_faq
+field_name: field_oit_faq
+entity_type: node
+bundle: oit_page
+label: FAQ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      oit_faq: oit_faq
+    target_bundles_drag_drop:
+      oit_faq:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

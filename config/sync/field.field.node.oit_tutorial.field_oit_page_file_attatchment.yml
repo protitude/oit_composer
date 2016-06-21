@@ -1,0 +1,29 @@
+uuid: 397cb29c-aedd-4f5f-910d-61ee1153d255
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oit_page_file_attatchment
+    - node.type.oit_tutorial
+  module:
+    - file
+_core:
+  default_config_hash: lG9LKtG44LhMAS824gN6RwL3QdslB7p4VwC4rPaYpQk
+id: node.oit_tutorial.field_oit_page_file_attatchment
+field_name: field_oit_page_file_attatchment
+entity_type: node
+bundle: oit_tutorial
+label: 'File Attatchment'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: tutorial/attatchment
+  file_extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp tex bib cls zip msi docx xlsx pptx key'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

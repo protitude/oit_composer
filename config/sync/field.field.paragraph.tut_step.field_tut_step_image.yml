@@ -1,0 +1,40 @@
+uuid: 197b1e26-e3c2-48ea-a2ba-fabd24ef2dda
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tut_step_image
+    - paragraphs.paragraphs_type.tut_step
+  module:
+    - image
+_core:
+  default_config_hash: RNLuEzvvzVJROVriyKqGx-cV5eNkzQ5Mbt3lmQoU5Xg
+id: paragraph.tut_step.field_tut_step_image
+field_name: field_tut_step_image
+entity_type: paragraph
+bundle: tut_step
+label: Image
+description: 'Visual representation of step.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: tutorial/step
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

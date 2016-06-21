@@ -1,0 +1,32 @@
+uuid: 195d8ed8-7053-4ff6-b8f2-812593669a7b
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+_core:
+  default_config_hash: dk16SphvdhK6bLUsQfo4aedIOugymJx6K6C-ekhqITU
+id: node.field_oit_news_front_image
+field_name: field_oit_news_front_image
+entity_type: node
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

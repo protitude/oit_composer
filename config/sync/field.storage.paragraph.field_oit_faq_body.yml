@@ -1,0 +1,21 @@
+uuid: f7cea6d0-20ea-4b97-9da0-8892495279fe
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+_core:
+  default_config_hash: fLlBmN1YXfAkWeVeQncnCCciS0bYTVgcN6VS4meI2EU
+id: paragraph.field_oit_faq_body
+field_name: field_oit_faq_body
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

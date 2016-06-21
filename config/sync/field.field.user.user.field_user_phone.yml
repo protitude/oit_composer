@@ -1,0 +1,22 @@
+uuid: cfd2e828-8ab7-47b1-b0b8-94c3fb34f36f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_user_phone
+  module:
+    - user
+_core:
+  default_config_hash: ecR6NbRzhoLhW73VvNp7OlnuE-ewSU3p9AJxD7hmQIE
+id: user.user.field_user_phone
+field_name: field_user_phone
+entity_type: user
+bundle: user
+label: Phone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

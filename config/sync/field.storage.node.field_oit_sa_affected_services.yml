@@ -1,0 +1,21 @@
+uuid: 0adaa71f-8fc0-4ca1-bce5-fa3c730b401c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: ob7Yt6xV8WR2WjbpfXd3ILHLNmRu4hxBqbEphg04A08
+id: node.field_oit_sa_affected_services
+field_name: field_oit_sa_affected_services
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

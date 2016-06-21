@@ -1,0 +1,21 @@
+uuid: 13c5f444-331e-4bd8-bfd6-b3bd3c9f4eeb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: oUE3-4Lc9DSgVHk1XEds79Tcb-WAeZuQSYGIxKLFAMk
+id: node.field_tut_related
+field_name: field_tut_related
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

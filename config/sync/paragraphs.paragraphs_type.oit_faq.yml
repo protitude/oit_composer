@@ -1,0 +1,8 @@
+uuid: 3a5ea552-2c5b-44d9-a609-2cd7f070b9e0
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Uzhu5WKBo3sHb7W2Mo0CvwKAukJPn4lIfjPrd_qajgI
+id: oit_faq
+label: faq

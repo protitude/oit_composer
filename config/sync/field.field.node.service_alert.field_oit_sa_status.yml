@@ -1,0 +1,23 @@
+uuid: 1698a823-8b2f-44f1-973f-f4e4ecf86feb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oit_sa_status
+    - node.type.service_alert
+  module:
+    - options
+_core:
+  default_config_hash: 7F3fmfYfZzsaDboKs_ZvdX6Dms17rbBxUL4cF9WfJLI
+id: node.service_alert.field_oit_sa_status
+field_name: field_oit_sa_status
+entity_type: node
+bundle: service_alert
+label: Status
+description: 'Select status of this service alert.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

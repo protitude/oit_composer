@@ -1,0 +1,52 @@
+uuid: 3bf9a2fe-3be7-4bf5-82ad-c757150bc30d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.service_alert.body
+    - field.field.node.service_alert.field_oit_page_file_attatchment
+    - field.field.node.service_alert.field_oit_sa_affected_buildings
+    - field.field.node.service_alert.field_oit_sa_affected_services
+    - field.field.node.service_alert.field_oit_sa_end_date_time
+    - field.field.node.service_alert.field_oit_sa_impact
+    - field.field.node.service_alert.field_oit_sa_info_uis
+    - field.field.node.service_alert.field_oit_sa_info_vendor
+    - field.field.node.service_alert.field_oit_sa_more_info
+    - field.field.node.service_alert.field_oit_sa_scope
+    - field.field.node.service_alert.field_oit_sa_start_date_time
+    - field.field.node.service_alert.field_oit_sa_status
+    - field.field.node.service_alert.field_sa_title
+    - node.type.service_alert
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: U6DJLeISZ1gPs44DG9Dahee5SYLHoHTthaK9LUh8z08
+id: node.service_alert.teaser
+targetEntityType: node
+bundle: service_alert
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_oit_page_file_attatchment: true
+  field_oit_sa_affected_buildings: true
+  field_oit_sa_affected_services: true
+  field_oit_sa_end_date_time: true
+  field_oit_sa_impact: true
+  field_oit_sa_info_uis: true
+  field_oit_sa_info_vendor: true
+  field_oit_sa_more_info: true
+  field_oit_sa_scope: true
+  field_oit_sa_start_date_time: true
+  field_oit_sa_status: true
+  field_sa_title: true

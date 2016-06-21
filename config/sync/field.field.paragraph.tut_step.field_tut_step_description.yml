@@ -1,0 +1,23 @@
+uuid: 726a3b79-f8d2-422e-95c3-ddb9fa86e846
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tut_step_description
+    - paragraphs.paragraphs_type.tut_step
+  module:
+    - text
+_core:
+  default_config_hash: kgfnGUDay_mQUFxlOBFmoOfEOtiDDN-R2mpMXHr9CWw
+id: paragraph.tut_step.field_tut_step_description
+field_name: field_tut_step_description
+entity_type: paragraph
+bundle: tut_step
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

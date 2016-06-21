@@ -1,0 +1,21 @@
+uuid: 67f42a67-f9ea-49e1-ae48-88345fd2379f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: zQkSFs31OMYDGPN-gkRvADe-Un5x4JANcybQOiBlE0k
+id: node.field_oit_sa_info_uis
+field_name: field_oit_sa_info_uis
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

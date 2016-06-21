@@ -1,0 +1,23 @@
+uuid: 5813c974-c896-4e97-b1dc-a9d4f02c7988
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oit_sa_impact
+    - node.type.service_alert
+  module:
+    - text
+_core:
+  default_config_hash: SoD7c_KZGWqbDl7ZlCQm9XcOddhBUJYLLJ0SQAL7BtY
+id: node.service_alert.field_oit_sa_impact
+field_name: field_oit_sa_impact
+entity_type: node
+bundle: service_alert
+label: impact
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

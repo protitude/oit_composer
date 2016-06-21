@@ -1,0 +1,27 @@
+uuid: 35cb2dcf-b277-4fa7-b808-08bc9827e45d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tut_related
+    - node.type.oit_tutorial
+_core:
+  default_config_hash: 0tvH69NXElmLyG8mWtzXghajb_E8de4J-j_RIfLUIEA
+id: node.oit_tutorial.field_tut_related
+field_name: field_tut_related
+entity_type: node
+bundle: oit_tutorial
+label: 'Related Tutorial'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      oit_tutorial: oit_tutorial
+    sort:
+      field: _none
+field_type: entity_reference

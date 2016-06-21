@@ -1,0 +1,87 @@
+uuid: 52fa617d-8dda-4cac-965d-d79a28510234
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.oit_page.body
+    - field.field.node.oit_page.field_oit_faq
+    - field.field.node.oit_page.field_oit_page_category
+    - field.field.node.oit_page.field_oit_page_custom_css_js
+    - field.field.node.oit_page.field_oit_page_file_attatchment
+    - field.field.node.oit_page.field_oit_page_main_service
+    - field.field.node.oit_page.field_oit_page_related_content
+    - field.field.node.oit_page.field_oit_page_service_related
+    - field.field.node.oit_page.field_oit_page_sn_level
+    - node.type.oit_page
+  module:
+    - entity_reference_revisions
+    - file
+    - options
+    - text
+    - user
+_core:
+  default_config_hash: 8ehg4g57B9ow2B4ZDObUtj8KzJdDd8RM3vpnZDNz5GY
+id: node.oit_page.default
+targetEntityType: node
+bundle: oit_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_oit_faq:
+    type: entity_reference_revisions_entity_view
+    weight: 105
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_oit_page_category:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_oit_page_custom_css_js:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_oit_page_file_attatchment:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  field_oit_page_main_service:
+    weight: 107
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  field_oit_page_related_content:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_oit_page_sn_level:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  links:
+    weight: 100
+hidden:
+  field_oit_page_service_related: true

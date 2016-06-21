@@ -1,0 +1,32 @@
+uuid: 00fbadcc-1dec-4d03-ba27-12548a8eb502
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+_core:
+  default_config_hash: EQADIlKMqlD811ejZ4sa6HoOI_8mJOwID_KfCal8VC4
+id: node.field_oit_page_sn_level
+field_name: field_oit_page_sn_level
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 0
+      label: URGENT
+    -
+      value: 1
+      label: SEVERE
+    -
+      value: 2
+      label: IMPORTANT
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

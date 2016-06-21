@@ -1,0 +1,11 @@
+uuid: 5efbf28f-2f40-48ac-987f-87f6db7ba8f7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: REQN_ay8rCt7uqt-5TCW7PKa8GdLA3TlS64DvpcnOYk
+name: 'OIT Categories'
+vid: oit_categories
+description: 'Categories shared across content types.'
+hierarchy: 1
+weight: 0

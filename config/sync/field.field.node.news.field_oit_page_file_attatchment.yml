@@ -1,0 +1,29 @@
+uuid: e3f82b0f-8e4e-4754-bfa4-5633918c4f6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oit_page_file_attatchment
+    - node.type.news
+  module:
+    - file
+_core:
+  default_config_hash: L1ZbaDv3XuGp0pmWGMkTk91Q0ZQgzwr1hzsasLCHXIA
+id: node.news.field_oit_page_file_attatchment
+field_name: field_oit_page_file_attatchment
+entity_type: node
+bundle: news
+label: 'File Attatchment'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: news/attatchment
+  file_extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp tex bib cls zip msi docx xlsx pptx key'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

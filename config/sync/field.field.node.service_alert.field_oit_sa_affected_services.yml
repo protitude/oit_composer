@@ -1,0 +1,21 @@
+uuid: 831304f4-8f83-4541-a71b-baad52b0f7bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oit_sa_affected_services
+    - node.type.service_alert
+_core:
+  default_config_hash: pxV0kYaSs5oMZnDYWPozot7c6OreTshDd-7xTgBewqw
+id: node.service_alert.field_oit_sa_affected_services
+field_name: field_oit_sa_affected_services
+entity_type: node
+bundle: service_alert
+label: 'Affected Services'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

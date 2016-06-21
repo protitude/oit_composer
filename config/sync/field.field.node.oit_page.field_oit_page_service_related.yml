@@ -1,0 +1,27 @@
+uuid: 88ce4e3e-70ca-421e-ab27-396222b968f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oit_page_service_related
+    - node.type.oit_page
+_core:
+  default_config_hash: cXTUfNi6tg4VHrGukTKVg3q1GVg4LYqGJu7qpblQPxY
+id: node.oit_page.field_oit_page_service_related
+field_name: field_oit_page_service_related
+entity_type: node
+bundle: oit_page
+label: 'Related Page(s)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      oit_page: oit_page
+    sort:
+      field: _none
+field_type: entity_reference

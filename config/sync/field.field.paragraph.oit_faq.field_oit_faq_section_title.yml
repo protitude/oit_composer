@@ -1,0 +1,21 @@
+uuid: 19dbcfa4-af1b-49f4-8d19-188f3f8cf8bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_oit_faq_section_title
+    - paragraphs.paragraphs_type.oit_faq
+_core:
+  default_config_hash: At7i0cSP6LL_Qr6ERFCMygLVckhyeZ_2FDwTGXW3tuA
+id: paragraph.oit_faq.field_oit_faq_section_title
+field_name: field_oit_faq_section_title
+entity_type: paragraph
+bundle: oit_faq
+label: 'FAQ Section Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

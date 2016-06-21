@@ -1,0 +1,21 @@
+uuid: 093458d2-df1b-4eba-98ba-15db7d8e62bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: K11nuryu1-app57gAsO9zYJQwurfEQta4DDKC3GXlho
+id: node.field_oit_sa_more_info
+field_name: field_oit_sa_more_info
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

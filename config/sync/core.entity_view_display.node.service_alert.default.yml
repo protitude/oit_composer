@@ -1,0 +1,118 @@
+uuid: 5ae40bc5-5a62-441d-bb8d-0f6a075b8101
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.service_alert.body
+    - field.field.node.service_alert.field_oit_page_file_attatchment
+    - field.field.node.service_alert.field_oit_sa_affected_buildings
+    - field.field.node.service_alert.field_oit_sa_affected_services
+    - field.field.node.service_alert.field_oit_sa_end_date_time
+    - field.field.node.service_alert.field_oit_sa_impact
+    - field.field.node.service_alert.field_oit_sa_info_uis
+    - field.field.node.service_alert.field_oit_sa_info_vendor
+    - field.field.node.service_alert.field_oit_sa_more_info
+    - field.field.node.service_alert.field_oit_sa_scope
+    - field.field.node.service_alert.field_oit_sa_start_date_time
+    - field.field.node.service_alert.field_oit_sa_status
+    - field.field.node.service_alert.field_sa_title
+    - node.type.service_alert
+  module:
+    - datetime
+    - file
+    - options
+    - text
+    - user
+_core:
+  default_config_hash: oaA0A57pALQonDsdLXx5Pu6zr2FAXk1GOuaboeNgf0k
+id: node.service_alert.default
+targetEntityType: node
+bundle: service_alert
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_oit_page_file_attatchment:
+    weight: 114
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  field_oit_sa_affected_buildings:
+    weight: 110
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_oit_sa_affected_services:
+    weight: 109
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_oit_sa_end_date_time:
+    weight: 106
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_oit_sa_impact:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_oit_sa_info_uis:
+    weight: 113
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_oit_sa_info_vendor:
+    weight: 112
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_oit_sa_more_info:
+    weight: 111
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_oit_sa_scope:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_oit_sa_start_date_time:
+    weight: 105
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_oit_sa_status:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_sa_title:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  links:
+    weight: 100
+hidden: {  }

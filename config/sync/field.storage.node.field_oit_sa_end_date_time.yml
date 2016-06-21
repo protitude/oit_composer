@@ -1,0 +1,22 @@
+uuid: 0aeb1e32-8d53-492c-82c3-847f01517ac0
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+_core:
+  default_config_hash: Nh3rxpSqk3Iva5R44WVzdtNg7z5egh63bVxg3d0FBzg
+id: node.field_oit_sa_end_date_time
+field_name: field_oit_sa_end_date_time
+entity_type: node
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,24 @@
+uuid: 333ea4e1-c08b-4824-9273-b3ff7563a0b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.oit_page
+  module:
+    - text
+_core:
+  default_config_hash: e_MoI1dDqCrBK2RJE5gek3HMtyz-lXMZq8nblfb8q84
+id: node.oit_page.body
+field_name: body
+entity_type: node
+bundle: oit_page
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

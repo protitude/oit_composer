@@ -1,0 +1,21 @@
+uuid: fd59767b-9d08-44e0-a3cd-f3cd2a160107
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: OTkMWDEtBuKVkohTfzQ4-I413GXN1M6koWo2id5Jpjo
+id: node.field_oit_page_custom_css_js
+field_name: field_oit_page_custom_css_js
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

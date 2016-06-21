@@ -1,0 +1,29 @@
+uuid: 8c9e00a4-71c3-4cfd-b75e-e71208bf4366
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oit_page_related_content
+    - node.type.news
+    - node.type.oit_page
+_core:
+  default_config_hash: HcpqulgpqaQXCFHg_uwHfj_JSWGxRSeIY6LQvd2dMHQ
+id: node.news.field_oit_page_related_content
+field_name: field_oit_page_related_content
+entity_type: node
+bundle: news
+label: 'Related Content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      oit_page: oit_page
+      news: news
+    sort:
+      field: _none
+field_type: entity_reference
