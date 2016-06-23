@@ -45,7 +45,7 @@
         "mikey179/vfsStream": "~1.2",
         "phpunit/phpunit": "~4.8",
         "symfony/css-selector": "~2.8",
-        "drupal/zap": "dev-master"
+        "drupal/zap": "dev-gen"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -68,10 +68,10 @@
     },
     "extra": {
         "installer-paths": {
-            "oit/core": ["type:drupal-core"],
-            "oit/modules/contrib/{$name}": ["type:drupal-module"],
-            "oit/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "oit/themes/contrib/{$name}": ["type:drupal-theme"],
+            "web/core": ["type:drupal-core"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
         }
     }
