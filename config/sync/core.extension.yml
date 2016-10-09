@@ -52,11 +52,6 @@ module:
   mollom: 0
   node: 0
   node_clone: 0
-  oit_features_news: 0
-  oit_features_oit_misc: 0
-  oit_features_oit_page: 0
-  oit_features_oit_tutorial: 0
-  oit_features_service_alert: 0
   options: 0
   page_cache: 0
   paragraphs: 0

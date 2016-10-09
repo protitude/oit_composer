@@ -1,14 +1,12 @@
-uuid: 8d876615-ae6c-432d-a9fa-2629901e7dde
+uuid: e7686f0b-d1a6-4085-ae41-1ec5c416785c
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - taxonomy
-_core:
-  default_config_hash: DjqGxZsl63PtMTEKzA8zjyLk9w-GimpWBnvBYSwZBbg
-id: node.field_oit_page_category
-field_name: field_oit_page_category
+id: node.field_oit_category
+field_name: field_oit_category
 entity_type: node
 type: entity_reference
 settings:

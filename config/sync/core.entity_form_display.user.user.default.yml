@@ -21,6 +21,11 @@ content:
     weight: 5
   language:
     weight: 0
+  path:
+    type: path
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
   timezone:
     weight: 6
   user_picture:
@@ -30,4 +35,8 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     weight: -1
-hidden: {  }
+hidden:
+  field_user_affiliation: true
+  field_user_department: true
+  field_user_name: true
+  field_user_phone: true

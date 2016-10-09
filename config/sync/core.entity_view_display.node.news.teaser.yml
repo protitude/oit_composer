@@ -5,11 +5,11 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.news.body
+    - field.field.node.news.field_oit_category
     - field.field.node.news.field_oit_news_front_image
     - field.field.node.news.field_oit_news_status
-    - field.field.node.news.field_oit_page_category
-    - field.field.node.news.field_oit_page_file_attatchment
     - field.field.node.news.field_oit_page_related_content
+    - field.field.node.news.field_upload
     - node.type.news
   module:
     - text
@@ -31,8 +31,8 @@ content:
   links:
     weight: 100
 hidden:
+  field_oit_category: true
   field_oit_news_front_image: true
   field_oit_news_status: true
-  field_oit_page_category: true
-  field_oit_page_file_attatchment: true
   field_oit_page_related_content: true
+  field_upload: true

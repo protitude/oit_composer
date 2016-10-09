@@ -1,19 +1,17 @@
-uuid: 31e49be9-adea-40e7-9b1a-70ec396ce6f3
+uuid: 1ed8a54c-5f70-4d07-a153-ce474f708a81
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_oit_page_category
+    - field.storage.node.field_oit_category
     - node.type.oit_page
     - taxonomy.vocabulary.oit_categories
-_core:
-  default_config_hash: VO-Xw8xtlEhU8MvorkK7Jp_IoTMMH2Gu-qf8QhUGWQw
-id: node.oit_page.field_oit_page_category
-field_name: field_oit_page_category
+id: node.oit_page.field_oit_category
+field_name: field_oit_category
 entity_type: node
 bundle: oit_page
 label: Category
-description: ''
+description: 'Choose the category that fits your content.'
 required: false
 translatable: false
 default_value: {  }
@@ -26,4 +24,5 @@ settings:
     sort:
       field: _none
     auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference

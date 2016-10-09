@@ -4,13 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.oit_tutorial.body
-    - field.field.node.oit_tutorial.field_oit_page_category
+    - field.field.node.oit_tutorial.field_oit_category
     - field.field.node.oit_tutorial.field_oit_page_file_attatchment
     - field.field.node.oit_tutorial.field_tut_computer_type
     - field.field.node.oit_tutorial.field_tut_footer
     - field.field.node.oit_tutorial.field_tut_related
     - field.field.node.oit_tutorial.field_tut_steps
     - field.field.node.oit_tutorial.field_tut_title_alias
+    - field.field.node.oit_tutorial.field_upload
     - node.type.oit_tutorial
   module:
     - entity_reference_revisions
@@ -31,16 +32,16 @@ content:
     weight: 2
     settings: {  }
     third_party_settings: {  }
-  field_oit_page_category:
-    weight: 3
+  field_oit_category:
+    weight: 4
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
   field_oit_page_file_attatchment:
-    weight: 9
-    label: above
+    weight: 8
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: file_default
@@ -51,14 +52,14 @@ content:
     third_party_settings: {  }
     type: list_default
   field_tut_footer:
-    weight: 7
+    weight: 10
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
   field_tut_related:
-    weight: 8
-    label: above
+    weight: 7
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -78,6 +79,12 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+  field_upload:
+    weight: 9
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
   links:
     weight: 1
     settings: {  }

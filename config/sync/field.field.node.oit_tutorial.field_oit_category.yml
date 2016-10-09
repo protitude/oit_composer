@@ -1,19 +1,17 @@
-uuid: f9fe92e0-c54e-4e7e-9a34-f17db8bc5b6d
+uuid: f0c81afe-2310-40c6-b61c-1458f2f328c6
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_oit_page_category
-    - node.type.news
+    - field.storage.node.field_oit_category
+    - node.type.oit_tutorial
     - taxonomy.vocabulary.oit_categories
-_core:
-  default_config_hash: nJsYn5Wz_KKd-qD41vMbTrIokgE5COEVUFTZ0cra6ME
-id: node.news.field_oit_page_category
-field_name: field_oit_page_category
+id: node.oit_tutorial.field_oit_category
+field_name: field_oit_category
 entity_type: node
-bundle: news
+bundle: oit_tutorial
 label: Category
-description: ''
+description: 'Choose the category that fits your content.'
 required: false
 translatable: true
 default_value: {  }
@@ -26,4 +24,5 @@ settings:
     sort:
       field: _none
     auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference

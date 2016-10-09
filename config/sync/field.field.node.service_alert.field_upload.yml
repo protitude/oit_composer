@@ -1,28 +1,26 @@
-uuid: 1fbdab6c-21bc-4629-89da-8308b9dd4077
+uuid: 62e3c023-62d8-4a1a-b4e1-3ccb1c790a66
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_oit_page_file_attatchment
+    - field.storage.node.field_upload
     - node.type.service_alert
   module:
     - file
-_core:
-  default_config_hash: hfroZek41pFT7jNlAcqmZoMszRkpRWUzgTjKWx5iDHQ
-id: node.service_alert.field_oit_page_file_attatchment
-field_name: field_oit_page_file_attatchment
+id: node.service_alert.field_upload
+field_name: field_upload
 entity_type: node
 bundle: service_alert
-label: 'File Attatchment'
-description: ''
+label: 'File Attachments'
+description: 'Attach files to your content.'
 required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: service_alert/attatchment
+  file_directory: service_alert/uploads
   file_extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp tex bib cls zip msi docx xlsx pptx key'
-  max_filesize: ''
+  max_filesize: '45'
   description_field: false
   handler: 'default:file'
   handler_settings: {  }

@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.service_alert.body
-    - field.field.node.service_alert.field_oit_page_file_attatchment
     - field.field.node.service_alert.field_oit_sa_affected_buildings
     - field.field.node.service_alert.field_oit_sa_affected_services
     - field.field.node.service_alert.field_oit_sa_end_date_time
@@ -16,6 +15,7 @@ dependencies:
     - field.field.node.service_alert.field_oit_sa_start_date_time
     - field.field.node.service_alert.field_oit_sa_status
     - field.field.node.service_alert.field_sa_title
+    - field.field.node.service_alert.field_upload
     - node.type.service_alert
   module:
     - datetime
@@ -36,27 +36,21 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
-  field_oit_page_file_attatchment:
-    weight: 114
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: file_default
   field_oit_sa_affected_buildings:
     weight: 110
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
   field_oit_sa_affected_services:
     weight: 109
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
   field_oit_sa_end_date_time:
     weight: 106
-    label: above
+    label: hidden
     settings:
       format_type: medium
       timezone_override: ''
@@ -64,37 +58,37 @@ content:
     type: datetime_default
   field_oit_sa_impact:
     weight: 107
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
   field_oit_sa_info_uis:
     weight: 113
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
   field_oit_sa_info_vendor:
     weight: 112
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
   field_oit_sa_more_info:
     weight: 111
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
   field_oit_sa_scope:
     weight: 108
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
   field_oit_sa_start_date_time:
     weight: 105
-    label: above
+    label: hidden
     settings:
       format_type: medium
       timezone_override: ''
@@ -102,17 +96,25 @@ content:
     type: datetime_default
   field_oit_sa_status:
     weight: 102
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: list_default
   field_sa_title:
     weight: 103
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+  field_upload:
+    weight: 115
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
   links:
     weight: 100
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }

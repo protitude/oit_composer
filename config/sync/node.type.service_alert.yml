@@ -11,7 +11,7 @@ third_party_settings:
       - main
     parent: 'main:'
   scheduler:
-    expand_fieldset: false
+    expand_fieldset: ''
     publish_enable: false
     publish_past_date: error
     publish_required: false

@@ -4,14 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.oit_page.body
+    - field.field.node.oit_page.field_oit_category
     - field.field.node.oit_page.field_oit_faq
-    - field.field.node.oit_page.field_oit_page_category
     - field.field.node.oit_page.field_oit_page_custom_css_js
-    - field.field.node.oit_page.field_oit_page_file_attatchment
     - field.field.node.oit_page.field_oit_page_main_service
     - field.field.node.oit_page.field_oit_page_related_content
     - field.field.node.oit_page.field_oit_page_service_related
     - field.field.node.oit_page.field_oit_page_sn_level
+    - field.field.node.oit_page.field_upload
     - node.type.oit_page
   module:
     - file
@@ -27,7 +27,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 7
+    weight: 8
     settings:
       rows: 9
       summary_rows: 3
@@ -35,12 +35,17 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 3
+    weight: 4
     settings: {  }
     third_party_settings: {  }
+  field_oit_category:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
   field_oit_faq:
     type: entity_reference_paragraphs
-    weight: 10
+    weight: 11
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -48,32 +53,21 @@ content:
       add_mode: dropdown
       form_display_mode: default
     third_party_settings: {  }
-  field_oit_page_category:
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
   field_oit_page_custom_css_js:
-    weight: 8
+    weight: 9
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: string_textarea
-  field_oit_page_file_attatchment:
-    weight: 9
-    settings:
-      progress_indicator: throbber
-    third_party_settings: {  }
-    type: file_generic
   field_oit_page_main_service:
-    weight: 12
+    weight: 13
     settings:
       display_label: false
     third_party_settings: {  }
     type: boolean_checkbox
   field_oit_page_related_content:
-    weight: 11
+    weight: 12
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -82,22 +76,28 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+  field_upload:
+    weight: 10
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
   path:
     type: path
-    weight: 6
+    weight: 7
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
+    weight: 5
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 6
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -108,7 +108,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60

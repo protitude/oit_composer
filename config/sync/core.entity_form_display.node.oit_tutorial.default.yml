@@ -4,13 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.oit_tutorial.body
-    - field.field.node.oit_tutorial.field_oit_page_category
+    - field.field.node.oit_tutorial.field_oit_category
     - field.field.node.oit_tutorial.field_oit_page_file_attatchment
     - field.field.node.oit_tutorial.field_tut_computer_type
     - field.field.node.oit_tutorial.field_tut_footer
     - field.field.node.oit_tutorial.field_tut_related
     - field.field.node.oit_tutorial.field_tut_steps
     - field.field.node.oit_tutorial.field_tut_title_alias
+    - field.field.node.oit_tutorial.field_upload
     - node.type.oit_tutorial
   module:
     - file
@@ -26,7 +27,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 8
+    weight: 9
     settings:
       rows: 9
       summary_rows: 3
@@ -37,13 +38,13 @@ content:
     weight: 3
     settings: {  }
     third_party_settings: {  }
-  field_oit_page_category:
+  field_oit_category:
+    type: options_select
     weight: 7
     settings: {  }
     third_party_settings: {  }
-    type: options_select
   field_oit_page_file_attatchment:
-    weight: 26
+    weight: 14
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
@@ -61,7 +62,7 @@ content:
     third_party_settings: {  }
     type: text_textarea
   field_tut_related:
-    weight: 9
+    weight: 10
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -82,6 +83,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+  field_upload:
+    weight: 15
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
   path:
     type: path
     weight: 6

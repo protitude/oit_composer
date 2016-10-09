@@ -1,28 +1,26 @@
-uuid: e3f82b0f-8e4e-4754-bfa4-5633918c4f6e
+uuid: d6ec1394-369a-497f-8094-5486e3b76051
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_oit_page_file_attatchment
+    - field.storage.node.field_upload
     - node.type.news
   module:
     - file
-_core:
-  default_config_hash: L1ZbaDv3XuGp0pmWGMkTk91Q0ZQgzwr1hzsasLCHXIA
-id: node.news.field_oit_page_file_attatchment
-field_name: field_oit_page_file_attatchment
+id: node.news.field_upload
+field_name: field_upload
 entity_type: node
 bundle: news
-label: 'File Attatchment'
-description: ''
+label: 'File Attachments'
+description: 'Attach files to your content.'
 required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: news/attatchment
+  file_directory: news/uploads
   file_extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp tex bib cls zip msi docx xlsx pptx key'
-  max_filesize: ''
+  max_filesize: '45'
   description_field: false
   handler: 'default:file'
   handler_settings: {  }

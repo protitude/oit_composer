@@ -5,13 +5,14 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.oit_tutorial.body
-    - field.field.node.oit_tutorial.field_oit_page_category
+    - field.field.node.oit_tutorial.field_oit_category
     - field.field.node.oit_tutorial.field_oit_page_file_attatchment
     - field.field.node.oit_tutorial.field_tut_computer_type
     - field.field.node.oit_tutorial.field_tut_footer
     - field.field.node.oit_tutorial.field_tut_related
     - field.field.node.oit_tutorial.field_tut_steps
     - field.field.node.oit_tutorial.field_tut_title_alias
+    - field.field.node.oit_tutorial.field_upload
     - node.type.oit_tutorial
   module:
     - text
@@ -33,10 +34,11 @@ content:
   links:
     weight: 100
 hidden:
-  field_oit_page_category: true
+  field_oit_category: true
   field_oit_page_file_attatchment: true
   field_tut_computer_type: true
   field_tut_footer: true
   field_tut_related: true
   field_tut_steps: true
   field_tut_title_alias: true
+  field_upload: true

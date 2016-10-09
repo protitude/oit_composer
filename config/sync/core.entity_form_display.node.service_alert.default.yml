@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.service_alert.body
-    - field.field.node.service_alert.field_oit_page_file_attatchment
     - field.field.node.service_alert.field_oit_sa_affected_buildings
     - field.field.node.service_alert.field_oit_sa_affected_services
     - field.field.node.service_alert.field_oit_sa_end_date_time
@@ -16,6 +15,7 @@ dependencies:
     - field.field.node.service_alert.field_oit_sa_start_date_time
     - field.field.node.service_alert.field_oit_sa_status
     - field.field.node.service_alert.field_sa_title
+    - field.field.node.service_alert.field_upload
     - node.type.service_alert
   module:
     - datetime
@@ -58,12 +58,6 @@ content:
     weight: 4
     settings: {  }
     third_party_settings: {  }
-  field_oit_page_file_attatchment:
-    weight: 26
-    settings:
-      progress_indicator: throbber
-    third_party_settings: {  }
-    type: file_generic
   field_oit_sa_affected_buildings:
     weight: 14
     settings:
@@ -135,6 +129,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+  field_upload:
+    weight: 27
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
   path:
     type: path
     weight: 7

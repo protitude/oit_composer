@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.service_alert.body
-    - field.field.node.service_alert.field_oit_page_file_attatchment
     - field.field.node.service_alert.field_oit_sa_affected_buildings
     - field.field.node.service_alert.field_oit_sa_affected_services
     - field.field.node.service_alert.field_oit_sa_end_date_time
@@ -17,6 +16,7 @@ dependencies:
     - field.field.node.service_alert.field_oit_sa_start_date_time
     - field.field.node.service_alert.field_oit_sa_status
     - field.field.node.service_alert.field_sa_title
+    - field.field.node.service_alert.field_upload
     - node.type.service_alert
   module:
     - text
@@ -38,7 +38,6 @@ content:
   links:
     weight: 100
 hidden:
-  field_oit_page_file_attatchment: true
   field_oit_sa_affected_buildings: true
   field_oit_sa_affected_services: true
   field_oit_sa_end_date_time: true
@@ -50,3 +49,4 @@ hidden:
   field_oit_sa_start_date_time: true
   field_oit_sa_status: true
   field_sa_title: true
+  field_upload: true
