@@ -1,0 +1,99 @@
+.region-highlighted {
+  position: relative;
+}
+label {
+  display: inline;
+  clear: none;
+}
+input, textarea, select {
+  max-width: inherit;
+}
+[id="block-basementfinishingremodeling"] {
+  z-index: 1;
+  max-width: 615px;
+  margin: 40px 0 0 40px;
+  background: rgba(28,28,28, 0.8);
+  position: absolute;
+  top: 0;
+  padding: 0;
+  h2 {
+    background: rgba(28,28,28, 1);
+    padding: 25px 5%;
+    margin: 0;
+    @include css4 {
+      color: var(--gold);
+    }
+    width: 100%;
+  }
+  .field--name-body {
+    color: #fff;
+    margin: 20px 25px;
+  }
+  .btn {
+    clear: inherit;
+  }
+  .btn:first-of-type {
+    margin-right: 28%;
+  }
+  .btn:hover {
+    background: inherit;
+    @include opacity(1);
+    @include css4 {
+      color: var(--gold);
+      border: 2px solid  var(--gold);
+    }
+  }
+}
+.view-id-front_image {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  img {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.path-frontpage {
+  .main-content-section {
+    padding-right: 0;
+  }
+  .region-content {
+    .contextual-region {
+      position: inherit;
+    }
+    .block {
+      position: relative;
+      background-repeat: no-repeat;
+      background-position: left 10px;
+      padding: 0 50px 40px 95px;
+      margin-bottom: 40px;
+    }
+    .btn {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
+.path-frontpage .main-content-section {
+}
+[id="block-projects"] {
+  background-image: url(../images/construction-worker.svg);
+  background-size: 65px 70px;
+}
+[id="block-freeconsult"] {
+  background-image: url(../images/consult.svg);
+  background-size: 65px 65px;
+}
+[id="block-views-block-testimonials-block-1"] {
+  background-image: url(../images/testimonials.svg);
+  background-size: 65px 60px;
+}
+[id="block-views-block-blog-block-1"] {
+  background-image: url(../images/blog.svg);
+  background-size: 65px 60px;
+}
+

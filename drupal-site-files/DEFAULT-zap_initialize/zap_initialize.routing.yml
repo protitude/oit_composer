@@ -1,0 +1,7 @@
+zap.front:
+  path: '/front'
+  defaults:
+    _controller: '\Drupal\zap_initialize\Controller\ZapController::zapFront'
+    _title: '⚡ Zap⚡  Profile'
+  requirements:
+    _permission: 'access content'

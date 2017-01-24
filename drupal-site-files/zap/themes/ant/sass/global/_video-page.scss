@@ -1,0 +1,46 @@
+.view-id-basement_videos .views-infinite-scroll-content-wrapper {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  margin: 0 -5px;
+  padding-top: 25px;
+  .views-row {
+    width: 25%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 235px;
+    padding: 5px;
+  }
+}
+.view-id-basement_videos {
+  .views-row{
+    position: relative;
+    display: inline-block;
+  }
+  .field-content span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(../images/play.png) center center no-repeat;
+    @include opacity(0.8);
+    height: 100%;
+    width: 100%;
+    &:hover {
+      @include opacity(0.5);
+    }
+  }
+}
+.block-views-blockbasement-videos-block-1 {
+  margin-top: 20px;
+}
+@media (min-width: 880px) {
+  .field--name-field-video-youtube {
+    float: left;
+    margin: 0 20px 10px 0;
+  }
+}
+

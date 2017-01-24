@@ -1,0 +1,46 @@
+.layout-container {
+  .region-primary-menu {
+    @include css4 {
+      background: var(--dark-gray);
+    }
+    clear: both;
+    overflow: hidden;
+  }
+}
+[id="block-mainnavigation"] {
+  height: 37px;
+  transition: all 0.3s ease;
+  a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0 10px 1em;
+    margin: 0 0 10px 0;
+    border-bottom: 1px solid #fff;
+  }
+  .menu-toggle--hide {
+    display: none;
+  }
+  ul.menu {
+    a.is-active, a:hover {
+      @include css4 {
+        color: var(--gold);
+      }
+    }
+  }
+}
+
+[id="block-mainnavigation"]:target {
+  height: 391px;
+  .menu-toggle {
+    display:none;
+  }
+  .menu-toggle--hide {
+    display: block;
+  }
+}
+.menu {
+  margin: 0;
+}
+
+

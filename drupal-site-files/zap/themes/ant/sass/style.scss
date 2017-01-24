@@ -1,0 +1,34 @@
+//it is nessesary to define the variables in sass map instead of :root, for
+//compatibility reasons.
+$variables: (
+  --off-white: #ebebeb,
+  --gray: #efedee,
+  --dark-gray: #626262,
+  --gold: #f2b71d,
+  --green: #324c31,
+  --font: sans-serif,
+  --layout-spacing: 2.6vw
+);
+
+// Imports
+@import "node_modules/compass-sass-mixins/lib/compass";
+@import "node_modules/compass-sass-mixins/lib/compass/reset";
+@import "node_modules/compass-sass-mixins/lib/compass";
+@import "css_vars";
+@import "global/layout";
+@import "global/front";
+@import "global/menu";
+@import "global/photo-page";
+@import "global/video-page";
+@import "global/about_102";
+@import "global/testimonial";
+@import "global/projects";
+@media all and (min-width: 740px) {
+  @import "narrow/layout";
+  @import "narrow/front";
+  @import "narrow/menu";
+}
+@media all and (min-width: 980px) {
+  @import "desk/layout";
+}
+

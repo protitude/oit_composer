@@ -1,0 +1,48 @@
+.layout-container {
+  .region-primary-menu {
+    height: 40px;
+    padding: 5px 0 0 10px;
+  }
+  [id="block-mainnavigation"] {
+    margin-top: 7px;
+    a {
+      border-bottom: none;
+      padding: 0;
+      margin: 0;
+    }
+    .menu-toggle {
+      display: none;
+    }
+  }
+
+  nav {
+    height: 16px;
+    overflow: hidden;
+  }
+  nav.pager {
+    height: inherit;
+  }
+  .block-local-tasks-block nav {
+    height: inherit;
+  }
+
+  .menu {
+    margin-top: -8px;
+    li {
+      float:left;
+      border-right: 1px solid #fff;
+      margin: 0 10px 0 0;
+      padding: 3px 10px 5px 0;
+    }
+    li:last-child {
+      border-right: none;
+    }
+  }
+}
+
+.menu--footer {
+  ul {
+    margin-left: 0;
+  }
+}
+

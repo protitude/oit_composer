@@ -1,0 +1,28 @@
+[id="block-basementfinishingremodeling"] {
+  padding: 0;
+  @include css4 {
+    margin: 20px var(--layout-spacing);
+  }
+  .btn {
+    clear: inherit;
+    margin-right: 15px;
+  }
+  .field--name-body {
+    ul {
+      @include column-count(2);
+    }
+  }
+}
+.path-frontpage {
+  .region-content {
+    .block {
+      padding: 0;
+      background-position: right 0;
+      margin-bottom: 20px;
+    }
+  }
+  .views-field-view-node {
+    margin: -10px 0 20px 0;
+  }
+}
+

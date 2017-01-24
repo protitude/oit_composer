@@ -1,0 +1,42 @@
+uuid: f8b32e1a-1b0b-4219-8de4-93f73aa1c28a
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_node_page
+migration_tags:
+  - 'Drupal 6'
+migration_group: migrate_drupal_6
+label: 'Nodes (page)'
+source:
+  plugin: d6_node
+  node_type: page
+process:
+  nid: tnid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  body/format:
+    plugin: migration
+    migration: upgrade_d6_filter_format
+    source: format
+  body/value: body
+  body/summary: teaser
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+destination:
+  plugin: 'entity:node'
+  default_bundle: page
+migration_dependencies:
+  required:
+    - upgrade_d6_user
+    - upgrade_d6_filter_format

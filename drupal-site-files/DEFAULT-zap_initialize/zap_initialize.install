@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the zap_initialize module.
+ */
+
+use Drupal\user\Entity\User;
+use Drupal\user\RoleInterface;
+
+/**
+ * Implements hook_install().
+ */
+function zap_initialize_install() {
+  \Drupal::configFactory()->getEditable('system.site')->set('name', '⚡ Zap ⚡ Initialize!')->save(TRUE);
+  \Drupal::configFactory()->getEditable('system.site')->set('mail', 'zap@protitude.com')->save(TRUE);
+  // To add categories, uncomment below.
+  // $terms = array(
+  //   'Page Category',
+  //   'News',
+  //   'Service',
+  //   'Tutorial'
+  // );
+  // _zap_taxonomy_terms_multiple($terms, 'zap_categories');
+}
+
+function _zap_taxonomy_terms_multiple($terms, $vid) {
+  foreach ($terms as $term) {
+    $new_term = \Drupal\taxonomy\Entity\Term::create([
+      'vid' => $vid,
+      'name' => $term,
+    ]);
+    $new_term->save();
+  }
+}

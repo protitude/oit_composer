@@ -1,0 +1,75 @@
+.region-highlighted {
+  position: relative;
+}
+[id="block-photovidviews"] {
+  position: absolute;
+  top: 85px;
+  z-index: 1;
+  @include css4 {
+    margin: 0 0 0 var(--layout-spacing);
+  }
+  ul {
+    margin: 0;
+    li {
+      float: left;
+      margin: 0 10px 0 0;
+      padding: 3px 10px 5px 0;
+    }
+  }
+  a.is-active {
+    text-decoration: none;
+  }
+}
+.view-id-finished_basements {
+  .view-filters {
+    padding-top: 25px;
+  }
+  .views-infinite-scroll-content-wrapper {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin: 0 -5px;
+    .views-row {
+      position: relative;
+      width: 25%;
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-basis: 235px;
+      padding: 5px;
+    }
+  }
+}
+
+.view-id-finished_basements {
+  .views-field-edit-node a,
+  .views-field.views-field-nid a,
+  .views-field-delete-node a {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 5px;
+    color: #fff;
+    @include css4 {
+      background: var(--dark-gray);
+      &:hover {
+        color: var(--green);
+        background: var(--gray);
+      }
+    }
+  }
+  .views-field-delete-node a {
+    left: 45px;
+    @include border-bottom-right-radius(5px);
+  }
+  .views-field.views-field-nid a {
+    @include border-top-left-radius(5px);
+    bottom: 8px;
+    right: 5px;
+    top: inherit;
+    left: inherit;
+  }
+}
+

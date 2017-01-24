@@ -1,0 +1,44 @@
+# nglocal version sha1: a99b1d167c306323e79b2416963532cb73a5d633
+default:
+  formatters:
+    pretty: true
+  suites:
+    default:
+      contexts:
+        - Drupal\DrupalExtension\Context\DrupalContext
+        - Drupal\DrupalExtension\Context\MinkContext
+        - Drupal\DrupalExtension\Context\MessageContext
+        - Drupal\DrupalExtension\Context\DrushContext
+  extensions:
+    Behat\MinkExtension:
+      goutte: ~
+      javascript_session: selenium2
+      selenium2:
+        wd_host: http://cid.dev:4444/wd/hub
+      base_url: http://cid.dev
+    Drupal\DrupalExtension:
+      blackbox: ~
+      api_driver: 'drupal'
+      drupal:
+        drupal_root: '/var/www/drupalvm/drupal/cid/web'
+      subcontexts:
+        paths:
+          - "/var/www/drupalvm/drupal/cid/web/profiles/contrib/zap/behat"
+      text:
+        username_field: "edit-name"
+        password_field: "edit-pass"
+        log_out: "Logout"
+        log_in: "Log in"
+      selectors:
+        message_selector: '.messages'
+        error_message_selector: '.messages.error'
+        success_message_selector: '.messages.status'
+      region_map:
+        Overhead: ".region-overhead"
+        Branding: "header"
+        Title: "h1.page-title"
+        Content: "main"
+        Menu: "nav#block-mainnavigation"
+        Sidebar First: "aside.layout-sidebar-second"
+        Footer: "footer"
+

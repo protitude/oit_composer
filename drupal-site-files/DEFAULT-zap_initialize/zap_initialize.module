@@ -1,0 +1,128 @@
+<?php
+
+/**
+ * @file
+ * Contains zap_initialize.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function zap_initialize_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the zap_initialize module.
+    case 'help.page.zap_initialize':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Initialize zap profile tasks/modules') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function zap_initialize_theme() {
+  $theme = [];
+
+  return $theme;
+}
+
+/**
+ * Implements hook_menu().
+ */
+function zap_initialize_menu() {
+  $items['front'] = array(
+    'title' => 'Office of Information Technology',
+    'access arguments' => array('access content'),
+  );
+
+  return $items;
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function zap_initialize_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if (isset($form['field_oit_page_category'])) {
+    $form['#attached']['library'][] = 'zap_initialize/zap.selectivity';
+    $form['#attached']['library'][] = 'zap_initialize/zap.pages';
+  }
+  switch ($form_id) {
+    case 'node_news_form':
+    case 'node_news_edit_form':
+      // Group for page sub-type extra fields
+      $form['oit_news_extras'] = array(
+        '#title' => t('News Extras'),
+        '#type' => 'details',
+        '#group' => 'advanced',
+        '#open' => 1,
+        '#weight' => 100,
+      );
+      $form['field_oit_page_category']['#group'] = 'oit_news_extras';
+      $form['field_oit_page_file_attatchment']['#group'] = 'oit_news_extras';
+      $form['field_oit_news_front_image']['#group'] = 'oit_news_extras';
+      $form[' field_oit_page_related_content']['#group'] = 'oit_news_extras';
+      // ksm($form);
+    break;
+    case 'node_oit_page_form':
+    case 'node_oit_page_edit_form':
+      // Group for page sub-type extra fields
+      $form['oit_page_extras'] = array(
+        '#title' => t('Page Extras'),
+        '#type' => 'details',
+        '#group' => 'advanced',
+        '#open' => 1,
+        '#weight' => 100,
+      );
+      $form['field_oit_page_sn_level']['#group'] = 'oit_page_extras';
+      $form['field_oit_page_main_service']['#group'] = 'oit_page_extras';
+      $form['field_oit_page_related_content']['#group'] = 'oit_page_extras';
+      $form['field_oit_page_category']['#group'] = 'oit_page_extras';
+      // Group for custom code
+      $form['oit_page_css_js'] = array(
+        '#title' => t('Custom Code <advanced users only>'),
+        '#type' => 'details',
+        '#group' => 'advanced',
+        '#open' => 0,
+        '#weight' => 100,
+      );
+      $form['field_oit_page_custom_css_js']['#group'] = 'oit_page_css_js';
+      // ksm($form);
+      if ( isset($_REQUEST["type"]) ) {
+        // Show/hide fields that apply/don't apply to the service type.
+        if ($_REQUEST["type"] == "service") {
+          $form['oit_page_extras']['#title'] = t('Service Extras');
+          $form['field_oit_page_sn_level']['#access'] = FALSE;
+          $form['body']['widget'][0]['#default_value'] = '<h2>Features</h2><p>Features here.</p><h2>Related Policies</h2><p>Policies here</p><h2>Benefits</h2><p>Benefits here</p><h2>Cost</h2><p>Cost here</p><h2>Who can get it</h2><p>Who can get it here</p><h2>How to get it</h2><p>how to get it here</p><h2>Related Policies</h2><p>related policies here</p>';
+        }
+        // Show/hide fields that apply/don't apply to the security notice type.
+        if ($_REQUEST["type"] == "security_notice") {
+          $form['oit_page_extras']['#title'] = t('Security Notice Extras');
+          $form['field_oit_page_main_service']['#access'] = FALSE;
+          $form['field_oit_page_related_content']['#access'] = FALSE;
+          $form['field_oit_faq']['#access'] = FALSE;
+          $form['body']['widget'][0]['#default_value'] = '<h2>Affected Software</h2><p>Affected Software here.</p><h2>Security Bulletin Name</h2><p>Security Bulletin Name here.</p><h2>Additional Information</h2><p>Additional Information goes here.</p>';
+        }
+      }
+      break;
+    case 'node_oit_tutorial_form':
+    case 'node_oit_tutorial_edit_form':
+      $form['oit_page_extras'] = array(
+        '#title' => t('Tutorial Extras'),
+        '#type' => 'details',
+        '#group' => 'advanced',
+        '#open' => 1,
+        '#weight' => 100,
+      );
+      $form['field_oit_page_category']['#group'] = 'oit_page_extras';
+      $form['field_tut_related']['#group'] = 'oit_page_extras';
+      $form['field_tut_computer_type']['#group'] = 'oit_page_extras';
+      $form['field_oit_page_file_attatchment']['#group'] = 'oit_page_extras';
+    break;
+  }
+}

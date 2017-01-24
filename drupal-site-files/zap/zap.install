@@ -1,0 +1,175 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the zap installation profile.
+ */
+
+use Drupal\user\Entity\User;
+use Drupal\user\RoleInterface;
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function zap_install() {
+  // Set front page to "node".
+  \Drupal::configFactory()->getEditable('system.site')->set('page.front', '/front')->save(TRUE);
+
+  // Allow visitor account creation with administrative approval.
+  $user_settings = \Drupal::configFactory()->getEditable('user.settings');
+  $user_settings->set('register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL)->save(TRUE);
+
+  // Enable default permissions for system roles.
+  user_role_grant_permissions(RoleInterface::ANONYMOUS_ID, array('access comments'));
+  user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, array('access comments', 'post comments', 'skip comment approval'));
+
+  // Assign user 1 the "administrator" role.
+  $user = User::load(1);
+  $user->roles[] = 'administrator';
+  $user->save();
+
+  // Enable the Contact link in the footer menu.
+  /** @var \Drupal\Core\Menu\MenuLinkManagerInterface $menu_link_manager */
+  $menu_link_manager = \Drupal::service('plugin.manager.menu.link');
+  $menu_link_manager->updateDefinition('contact.site_page', array('enabled' => TRUE));
+
+  user_role_grant_permissions(RoleInterface::ANONYMOUS_ID, array('access site-wide contact form'));
+  user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, array('access site-wide contact form'));
+
+  // Allow authenticated users to use shortcuts.
+  user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, array('access shortcuts'));
+
+  // Populate the default shortcut set.
+#  $shortcut = entity_create('shortcut', array(
+#    'shortcut_set' => 'default',
+#    'title' => t('Add content'),
+#    'weight' => -20,
+#    'link' => array('uri' => 'internal:/node/add'),
+#  ));
+#  $shortcut->save();
+#
+#  $shortcut = entity_create('shortcut', array(
+#    'shortcut_set' => 'default',
+#    'title' => t('All content'),
+#    'weight' => -19,
+#    'link' => array('uri' => 'internal:/admin/content'),
+#  ));
+#  $shortcut->save();
+
+  // Allow all users to use search.
+  user_role_grant_permissions(RoleInterface::ANONYMOUS_ID, array('search content'));
+  user_role_grant_permissions(RoleInterface::AUTHENTICATED_ID, array('search content'));
+
+  // Enable the admin theme.
+  \Drupal::configFactory()->getEditable('node.settings')->set('use_admin_theme', TRUE)->save(TRUE);
+  $module_list = array(
+    'admin_toolbar',
+    'admin_toolbar_tools',
+#    'auto_entitylabel',
+    'big_pipe',
+    'block_place',
+    'coffee',
+    'colorbox',
+    'config',
+#    'conflict',
+    'contact_storage',
+#    'context',
+#    'context_ui',
+    'ctools_views',
+    'devel',
+    'diff',
+    'editor_file',
+    'entity',
+#    'entity_reference_revisions',
+    'eva',
+    'extlink',
+    'features',
+    'features_ui',
+#    'field_collection',
+    'field_group',
+    'filter_perms',
+    'google_analytics_lite',
+    'google_map_field',
+    'honeypot',
+    'inline_entity_form',
+    'linkit',
+    'kint',
+    'masquerade',
+    'metatag',
+    'metatag_dc',
+    'metatag_facebook',
+    'metatag_google_plus',
+    'metatag_open_graph',
+    'metatag_twitter_cards',
+    'metatag_verification',
+#    'multiversion',
+    'mollom',
+    'node_clone',
+    'paragraphs',
+    'pathauto',
+    'persistent_login',
+    'redirect',
+    'responsive_image',
+    //'scheduler',
+    'shortcode',
+    'token',
+    'trash',
+    'views_infinite_scroll',
+  );
+  \Drupal::service('module_installer')->install($module_list, TRUE);
+}
+
+
+/**
+ * Implements hook_install_tasks_alter().
+ */
+function zap_install_tasks_alter(&$tasks, $install_state) {
+ $tasks['install_finished']['function'] = 'zap_install_finished';
+}
+
+/**
+ * Custom installation task; perform final steps and redirect the user to the new site if there are no errors.
+ *
+ * @param $install_state
+ *   An array of information about the current installation state.
+ *
+ * @return
+ *   A message informing the user about errors if there was some.
+ */
+function zap_install_finished(&$install_state) {
+  $profile = drupal_get_profile();
+
+  // Installation profiles are always loaded last.
+  module_set_weight($profile, 1000);
+
+  // Build the router once after installing all modules.
+  // This would normally happen upon KernelEvents::TERMINATE, but since the
+  // installer does not use an HttpKernel, that event is never triggered.
+  \Drupal::service('router.builder')->rebuild();
+
+  // Run cron to populate update status tables (if available) so that users
+  // will be warned if they've installed an out of date Drupal version.
+  // Will also trigger indexing of profile-supplied content or feeds.
+  \Drupal::service('cron')->run();
+
+  if ($install_state['interactive']) {
+    // Load current user and perform final login tasks.
+    // This has to be done after drupal_flush_all_caches()
+    // to avoid session regeneration.
+    $account = User::load(1);
+    user_login_finalize($account);
+  }
+  $final_module_list = array(
+    'zap_initialize',
+  );
+  \Drupal::service('module_installer')->install($final_module_list, TRUE);
+  drupal_flush_all_caches();
+
+  $success_message = t('Congratulations, you installed @drupal!', array(
+    '@drupal' => drupal_install_profile_distribution_name(),
+  ));
+  drupal_set_message($success_message);
+}

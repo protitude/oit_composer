@@ -1,0 +1,43 @@
+id: pix_image
+migration_group: pix
+migration_tags: {}
+label: 'Pix Image'
+
+source:
+  plugin: pix_image
+
+destination:
+  plugin: 'entity:media'
+
+process:
+  bundle:
+    plugin: default_value
+    default_value: image
+  name: title
+  uid:
+    -
+      plugin: migration
+      migration: pix_user
+      source: uid
+      no_stub: true
+    -
+      plugin: default_value
+      default_value: 1
+  field_names:
+    plugin: migration
+    source: names
+  status: status
+  created: created
+  changed: changed
+  'field_picture/target_id':
+    plugin: migration
+    migration: pix_file
+
+migration_dependencies:
+  required:
+    - pix_user
+    - pix_file
+
+dependencies:
+  module:
+    - pix_migrate

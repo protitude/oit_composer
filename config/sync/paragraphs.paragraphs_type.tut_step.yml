@@ -1,8 +1,0 @@
-uuid: 31289ec6-1967-47ad-9983-b961ce382a2e
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: 2j9QeV7n4Tkw63n-kyh5OWaPsVBJFRarcP_Bg9G3NNQ
-id: tut_step
-label: Step

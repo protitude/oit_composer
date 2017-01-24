@@ -1,0 +1,32 @@
+{
+  "name": "ant",
+  "version": "0.2.0",
+  "private": true,
+  "devDependencies": {
+    "watch": "latest",
+    "jshint": "latest",
+    "node-sass": "3.4.1",
+    "compass-sass-mixins": "latest",
+    "browserify": "latest",
+    "parallelshell": "latest",
+    "uglify-js": "latest",
+    "watchify": "latest",
+    "live-reload": "latest",
+    "imagemin": "latest"
+  },
+  "scripts": {
+    "clean": "rm css/*.css && rm js/script.js",
+    "lint": "jshint js/src/init.js",
+    "watch:lint": "watch 'npm run lint'",
+    "livereload": "live-reload --port 9091 ./",
+    "uglify:compress": "browserify js/src/init.js | uglifyjs --compress --mangle -o js/script.js",
+    "watch:uglify": "watchify js/src/init.js -o js/script.js -dv",
+    "sass:watch": "node-sass -w sass -o css",
+    "sass:compress": "node-sass --output-style compressed -r sass -o css",
+    "imagemin": "imagemin images images",
+    "behat": "./bin/behat",
+    "env": "env",
+    "build:watch": "parallelshell 'npm run sass:watch' 'npm run watch:lint' 'npm run watch:uglify' 'npm run livereload'",
+    "build": "npm run clean && npm run imagemin && npm run lint && npm run uglify:compress && npm run sass:compress"
+  }
+}

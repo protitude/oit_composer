@@ -1,0 +1,353 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  @include css4 {
+    background: var(--gray);
+  }
+}
+body.js-fontloaded {
+  font-family: 'Maitree', serif;
+  color: rgba(0,0,0,.9);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.layout-container {
+  background: #fff;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+header, .region-primary-menu, main {
+  @include css4 {
+    margin: 0 var(--layout-spacing);
+  }
+}
+fieldset {
+  display: inline-block;
+  min-width: 0;
+  max-width: 100%;
+}
+label {
+  display: block;
+  clear: both;
+}
+input, textarea, select {
+  max-width: 100%;
+}
+main {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+header {
+  min-height: 200px;
+  position: relative;
+}
+.block-local-tasks-block {
+  @include css4 {
+    border-bottom: 1px solid var(--dark-gray);
+  }
+  margin: 0 0 2vh 0;
+  ul {
+    margin: 0;
+  }
+}
+.messages {
+  width: 100%;
+}
+a {
+  @include css4 {
+    color: var(--green);
+  }
+}
+a:hover {
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5 {
+  font-size: 2em;
+  font-weight: bold;
+  display: inline-block;
+  margin: 10px 0 15px 0;
+}
+h1, h2 {
+  @include css4 {
+    border-bottom: 3px solid var(--gold);
+  }
+}
+h3, h4, h5 {
+  width: 100%;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1.3em;
+}
+h5 {
+  font-size: 1.2em;
+}
+ul, dl, ol, p {
+  // Golden ration FTW!
+  // http://www.phpied.com/css-last-line-height-ever-need
+  line-height: 1.61803398875;
+  margin-bottom: 15px;
+}
+[id="block-basementfinishingremodeling"],
+.region-content {
+  ul, dl, ol, p, a {
+    font-size: 110%;
+  }
+}
+.btn {
+  display: inline-block;
+  clear: both;
+  border: 2px solid #000;
+  color: #000;
+  @include css4 {
+    background: var(--gold);
+  }
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+  margin: 5px 0;
+}
+.btn:hover {
+  @include opacity(0.8);
+}
+.layout-content, .layout-sidebar-second {
+  display: inline-block;
+  direction: ltr;
+  box-sizing: border-box;
+  text-align: left;
+  vertical-align: top;
+  width: 100%;
+}
+.layout-sidebar-second {
+  .view-content {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin: 0 -5px;
+  }
+  .views-row {
+    width: 25%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100px;
+    padding: 0 5px;
+  }
+}
+.ant-one-sidebar .main-content-section {
+  @include css4 {
+    padding-right: var(--layout-spacing);
+  }
+}
+iframe {
+  max-width: 100%;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+.region-overhead {
+  font-size: 90%;
+  @include css4 {
+    padding: 5px var(--layout-spacing);
+    background: var(--gray);
+  }
+  min-height: 40px;
+  ul {
+    margin: 0;
+  }
+  li {
+    float: left;
+    padding: 5px 0 0 0;
+  }
+  a {
+    display: block;
+    background-repeat: no-repeat;
+  }
+  .email a {
+    background-image: url(../images/email.svg);
+    background-size: 21px 15px;
+    background-position: 0 3px;
+    padding-left: 25px;
+  }
+  .estimate a {
+    background-image: url(../images/estimate.svg);
+    background-size: 21px 15px;
+    background-position: 12px 3px;
+    padding-left: 33px;
+  }
+  .phone {
+    background-image: url(../images/phone.svg);
+    background-size: 21px 18px;
+    background-position: 9px 5px;
+    background-repeat: no-repeat;
+    padding-left: 33px;
+  }
+  a {
+    color: #000;
+  }
+}
+@media (max-width: 464px) {
+  .region-overhead {
+    .email a {
+      background-position: 9px 3px;
+      padding-left: 33px;
+    }
+  }
+}
+[id="block-siteinformation"] {
+  padding: 30px 0 0 0;
+}
+.site-info {
+  display: inline-block;
+  position: relative;
+  min-height: 145px;
+  padding: 130px 0 20px 0;
+}
+.logo {
+  float:left;
+  img {
+    height: 120px;
+  }
+  a {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+.site-name {
+  font-size: 150%;
+}
+.site-slogan {
+  @include css4 {
+    color: var(--dark-gray);
+  }
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 120%;
+  line-height: 160%;
+}
+.js-fontloaded .site-slogan {
+  font-family: 'Palanquin Dark', sans-serif;
+  font-weight: inherit;
+}
+header {
+  .bbb-logo {
+    position: absolute;
+    z-index: 1;
+    top: 35px;
+    right: 0;
+    img {
+      height: 89px;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .site-info {
+    padding: 110px 0 20px 0;
+  }
+  .logo img {
+    height: 100px;
+  }
+  .site-name {
+    font-size: 120%;
+  }
+  .site-slogan {
+    font-size: 105%;
+  }
+  header {
+    .bbb-logo {
+      top: 40px;
+      img {
+        height: 70px;
+      }
+    }
+  }
+}
+.region-primary-menu {
+  z-index: 1;
+  position: relative;
+}
+.path-frontpage .region-highlighted {
+  margin-top: -25px;
+}
+footer.node__meta {
+  display: block;
+  font-style: italic;
+  font-size: .8em;
+  padding: 0 0 5px 0;
+}
+
+.region-footer-first,
+.region-footer-second {
+  padding: 10px 0;
+  color: #fff;
+  @include css4 {
+    background: var(--dark-gray);
+    padding: 10px var(--layout-spacing);
+  }
+  a {
+    color: #fff;
+  }
+  ul.menu a.is-active {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+.region-footer-third {
+  width: 100%;
+  @include css4 {
+    padding: 20px var(--layout-spacing);
+    background: var(--gray);
+  }
+  ul {
+    @include column-count(2);
+  }
+}
+[id="block-footer"] {
+  margin-top: 10px;
+  ul {
+    margin-left: 0;
+  }
+}
+[id="block-bbbfooter"] {
+  img {
+    height: 80px;
+    width: 104px;
+  }
+  ul {
+    width: 100%;
+    margin: 20px 0 0 0;
+    img {
+      height: 32px;
+      width: 32px;
+    }
+  }
+  li {
+    float: left;
+    margin: 0 10px 0 0;
+  }
+}
+.layout-sidebar-second {
+  img {
+    padding-bottom: 10px;
+  }
+}
+// Ajax throbber on infinate scroll
+.ajax-progress-fullscreen {
+  top: 60%;
+}
+

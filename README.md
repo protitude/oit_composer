@@ -1,4 +1,4 @@
-# OIT Composer Script
+# Composer Script
 ```
 composer install
 ```

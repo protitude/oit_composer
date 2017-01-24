@@ -1,8 +1,6 @@
 *.DS_Store
 vendor
-web
-composer.lock
 oit
 oit/*
-zap-vendor
-zap-vendor/*
+backups
+drupal-site-files/files

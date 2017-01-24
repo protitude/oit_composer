@@ -1,0 +1,10 @@
+.path-testimonials .views-row {
+  @include css4 {
+    border-bottom: 1px dashed var(--dark-gray);
+  }
+  margin-bottom: 10px;
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
