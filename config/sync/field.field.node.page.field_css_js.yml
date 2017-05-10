@@ -1,0 +1,19 @@
+uuid: e51207cf-9efe-4db5-ad2a-5573c647ddf7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_css_js
+    - node.type.page
+id: node.page.field_css_js
+field_name: field_css_js
+entity_type: node
+bundle: page
+label: css/js
+description: 'Custom css or js. Advanced use only'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,33 @@
+uuid: 11a176bb-5331-4fdf-afe1-c1a8e109c173
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.faq.field_faq_item
+    - field.field.paragraph.faq.field_faq_section_title
+    - paragraphs.paragraphs_type.faq
+  module:
+    - entity_reference_revisions
+id: paragraph.faq.default
+targetEntityType: paragraph
+bundle: faq
+mode: default
+content:
+  field_faq_item:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_faq_section_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

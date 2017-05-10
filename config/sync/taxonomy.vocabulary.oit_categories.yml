@@ -1,0 +1,9 @@
+uuid: 8e6ed849-d3c9-4abf-a20e-d8d2f03e29bd
+langcode: en
+status: true
+dependencies: {  }
+name: 'OIT Categories'
+vid: oit_categories
+description: 'Main OIT categories'
+hierarchy: 0
+weight: 0

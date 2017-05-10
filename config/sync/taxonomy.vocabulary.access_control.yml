@@ -1,0 +1,9 @@
+uuid: c98529ba-a9f5-49b8-b8e4-be67a282c300
+langcode: en
+status: true
+dependencies: {  }
+name: 'Access Control'
+vid: access_control
+description: 'Node Access Control'
+hierarchy: 0
+weight: 0

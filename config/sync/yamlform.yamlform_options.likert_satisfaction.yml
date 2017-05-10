@@ -1,0 +1,12 @@
+uuid: 3f702e40-690f-4c22-8dc3-ce3d80c8c70d
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - yamlform
+_core:
+  default_config_hash: xOuycY49gC_OBv-MQDw27wAcp0udPoa1-LVDbutu8wA
+id: likert_satisfaction
+label: 'Likert: Satisfaction'
+options: "1: Very Unsatisfied\n2: Unsatisfied\n3: Neutral\n4: Satisfied\n5: Very Satisfied\n"

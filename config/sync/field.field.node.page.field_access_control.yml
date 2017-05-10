@@ -1,0 +1,28 @@
+uuid: 1ff96d3d-de6f-4d69-b127-7d388f9fe77c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_access_control
+    - node.type.page
+    - taxonomy.vocabulary.access_control
+id: node.page.field_access_control
+field_name: field_access_control
+entity_type: node
+bundle: page
+label: 'Access Control'
+description: 'Leave these unselected in order to keep this visible to the public. Otherwise check what role should be able to see this.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      access_control: access_control
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

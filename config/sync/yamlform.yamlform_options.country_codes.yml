@@ -1,0 +1,12 @@
+uuid: e4e14022-57f6-4cb0-aadd-33cea4cfe338
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - yamlform
+_core:
+  default_config_hash: iixTnzyMFXuYFzJMdBP2ylX0OdpKjTMkVKvdtjMNlkQ
+id: country_codes
+label: 'Country codes'
+options: ''

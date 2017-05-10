@@ -1,0 +1,21 @@
+uuid: fca6638e-9cc8-4223-82b6-9c43fee4fb21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_faq_body
+    - paragraphs.paragraphs_type.faq_item
+  module:
+    - text
+id: paragraph.faq_item.field_faq_body
+field_name: field_faq_body
+entity_type: paragraph
+bundle: faq_item
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

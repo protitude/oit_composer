@@ -1,0 +1,12 @@
+uuid: a5444ab5-84d0-4dea-958b-80e524606ef5
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - yamlform
+_core:
+  default_config_hash: '-W3gpBfgHwTMMwIpD8caXnBtcCDB3fYO4tLqDDBdcs4'
+id: languages
+label: Languages
+options: ''

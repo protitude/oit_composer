@@ -1,0 +1,7 @@
+uuid: 47ac8b70-afd9-4127-b5d7-c3ac353a7ea4
+langcode: en
+status: true
+dependencies: {  }
+id: faq
+label: FAQ
+behavior_plugins: {  }

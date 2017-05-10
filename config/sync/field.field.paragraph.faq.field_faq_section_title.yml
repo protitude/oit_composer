@@ -1,0 +1,19 @@
+uuid: 39cb7bdc-3315-473a-bc62-eb2516f34e41
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_faq_section_title
+    - paragraphs.paragraphs_type.faq
+id: paragraph.faq.field_faq_section_title
+field_name: field_faq_section_title
+entity_type: paragraph
+bundle: faq
+label: 'FAQ section title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

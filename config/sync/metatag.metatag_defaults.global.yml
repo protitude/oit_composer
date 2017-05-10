@@ -1,0 +1,10 @@
+uuid: 3f908361-2f43-4b6e-bd15-a0d9b1f47b6b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 5rOnjIF_aDyGBmfXNhJnkPXxQMlem0CmVmggV-TF3Fg
+id: global
+label: Global
+tags:
+  title: '[current-page:title] | [site:name]'

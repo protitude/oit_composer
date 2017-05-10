@@ -1,0 +1,13 @@
+uuid: 43f57982-f019-464b-b5a7-662791592e95
+langcode: en
+status: true
+dependencies:
+  module:
+    - mollom
+_core:
+  default_config_hash: j6Ue7cqKs-sJx6vtFshGtwfixoAwoWjy0p5LjdzYd-s
+id: mollom_comment_unpublish_action
+label: 'Report to Mollom and unpublish'
+type: comment
+plugin: mollom_comment_unpublish_action
+configuration: {  }
