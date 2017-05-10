@@ -1,0 +1,4 @@
+---
+- name: 'OIT Cron script'
+  template: src=../../../../scripts/templates/cron-oit.j2 dest=/home/{{ vagrant_user }}/cron.sh owner={{ vagrant_user }} group={{ vagrant_user }} mode=0700
+
