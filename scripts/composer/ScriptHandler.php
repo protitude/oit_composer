@@ -13,7 +13,7 @@ use Symfony\Component\Filesystem\Filesystem;
 class ScriptHandler {
 
   protected static function getDrupalRoot($project_root) {
-    return $project_root .  '/oit';
+    return $project_root .  '/web';
   }
 
   public static function scaffoldFiles(Event $event) {
@@ -78,8 +78,8 @@ class ScriptHandler {
     // Prepare the services file for installation
     $services_settings = $fs->exists($composer_root . '/drupal-site-files/services.yml')?'services.yml':'DEFAULT-services.yml';
     if (!$fs->exists($root . '/sites/default/services.yml')) {
-      $fs->copy($composer_root . '/drupal-site-files/' . $services_settings, $root . '/sites/default/' . $services_settings);
-      $fs->chmod($root . '/sites/default/' . $services_settings, 0666);
+      $fs->copy($composer_root . '/drupal-site-files/' . $services_settings, $root . '/sites/default/services.yml');
+      $fs->chmod($root . '/sites/default/services.yml', 0666);
       $event->getIO()->write("Create a sites/default/" . $services_settings  . " file with chmod 0666");
     }
 

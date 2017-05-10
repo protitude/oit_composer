@@ -79,7 +79,6 @@ function zap_install() {
 #    'context',
 #    'context_ui',
     'ctools_views',
-    'devel',
     'diff',
     'editor_file',
     'entity',
