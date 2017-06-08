@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies: {  }
+id: d6_file
+migration_group: ya_example
+label: Files
+source:
+  plugin: d7_file
+process:
+  fid: fid
+  filename: filename
+  uri: uri
+  filemime: filemime
+  status: status
+  created: timestamp
+  changed: timestamp
+  uid: uid
+destination:
+  plugin: 'entity:file'
+  source_path_property: filepath
+  urlencode: true
+  # for the purposes of the example assumes that directory exist.
+  # override per environment specific through settings.local.php or settings.php
+  # example: $config['migrate_plus.migration']['source']['constants']['source_base_path'] = 'my/local/source/path';
+  source_base_path: /var/www/site/vlad_aux/d7-dev/
+migration_dependencies:
+  required: {  }
+  optional: {  }

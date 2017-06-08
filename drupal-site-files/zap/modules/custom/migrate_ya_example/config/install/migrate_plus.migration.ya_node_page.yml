@@ -1,0 +1,49 @@
+langcode: en
+status: true
+dependencies: {  }
+id: ya_node_page
+migration_tags: null
+migration_group: ya_example
+label: 'Nodes (Basic page)'
+source:
+  plugin: d7_node
+  node_type: page
+process:
+  nid: nid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  # references ya_user for id migration integrity
+  uid:
+    plugin: migration
+    migration: ya_user
+    source: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid:
+    plugin: migration
+    migration: ya_user
+    source: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  field_overview: body
+  body: body
+  field_drupal8_images:
+    plugin: d6_cck_file
+    # migration key is not really needed plugin d6_cck_file will always look for migration name d6_file
+    # its hardcoded :(
+    migration: d6_file
+    source: field_drupal7_images
+destination:
+  plugin: 'entity:node'
+  default_bundle: page
+migration_dependencies:
+  required:
+    - d6_file
+    - ya_user

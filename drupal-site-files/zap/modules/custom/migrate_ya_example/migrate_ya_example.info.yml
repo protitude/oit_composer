@@ -1,0 +1,9 @@
+name: migrate_ya_example
+type: module
+description: Migrate D7 content "Page and Article" to D8 content "Page and Article"
+core: 8.x
+package: Custom
+dependencies:
+  - migrate_plus
+  - migrate_drupal
+  - migrate_tools
