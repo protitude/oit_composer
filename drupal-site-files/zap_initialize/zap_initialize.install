@@ -23,8 +23,6 @@ function zap_initialize_install() {
    _zap_taxonomy_terms_multiple($terms, 'oit_categories');
   $module_list = array(
     'filefield_paths',
-    'yamlform',
-    'yamlform_ui'
   );
   \Drupal::service('module_installer')->install($module_list, TRUE);
 }
