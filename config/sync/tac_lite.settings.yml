@@ -1,0 +1,23 @@
+tac_lite_categories:
+  access_control: access_control
+tac_lite_schemes: '1'
+menu_rebuild_needed: true
+_core:
+  default_config_hash: O3rsbjEveBvnof1Hdq3ih8UBqlRN2betEk9OZhaiTPM
+tac_lite_config_scheme_1:
+  name: 'Node Access'
+  perms:
+    grant_view: grant_view
+  unpublished: 1
+  term_visibility: 0
+tac_lite_grants_scheme_1:
+  anonymous:
+    access_control:
+      - '0'
+  authenticated:
+    access_control:
+      5: '5'
+  administrator:
+    access_control:
+      5: '5'
+      6: '6'

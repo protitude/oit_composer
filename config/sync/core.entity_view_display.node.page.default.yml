@@ -28,41 +28,25 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_access_control:
-    weight: 2
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_category:
-    weight: 5
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   field_faq:
     type: entity_reference_revisions_entity_view
-    weight: 6
-    label: above
+    weight: 4
+    label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
     region: content
   field_related_content:
-    weight: 3
-    label: above
+    weight: 2
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
   field_upload:
-    weight: 4
+    weight: 3
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -74,4 +58,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_access_control: true
+  field_category: true
   field_css_js: true

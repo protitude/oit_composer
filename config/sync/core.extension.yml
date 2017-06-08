@@ -31,8 +31,6 @@ module:
   entity_reference_revisions: 0
   eva: 0
   extlink: 0
-  features: 0
-  features_ui: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -41,7 +39,6 @@ module:
   filter: 0
   filter_perms: 0
   google_analytics_lite: 0
-  google_map_field: 0
   help: 0
   history: 0
   honeypot: 0
@@ -59,7 +56,6 @@ module:
   metatag_open_graph: 0
   metatag_twitter_cards: 0
   metatag_verification: 0
-  mollom: 0
   node: 0
   node_clone: 0
   options: 0
@@ -87,11 +83,10 @@ module:
   views_infinite_scroll: 0
   views_ui: 0
   workflows: 0
-  yamlform: 0
-  yamlform_ui: 0
   zap_initialize: 0
   menu_link_content: 1
   views: 10
+  tac_lite: 100
   zap: 1000
 theme:
   stable: 0

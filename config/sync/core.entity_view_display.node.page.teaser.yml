@@ -27,6 +27,8 @@ content:
     region: content
 hidden:
   field_access_control: true
+  field_category: true
   field_css_js: true
+  field_faq: true
   field_related_content: true
   field_upload: true
