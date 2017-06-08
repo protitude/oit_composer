@@ -232,7 +232,6 @@
         "drupal/entity_reference_revisions": ">1.0",
         "drupal/entityqueue": ">1.0",
         "drupal/extlink": ">1.0",
-        "drupal/features": ">3.0",
         "drupal/fences": ">1.0",
         "drupal/field_collection": ">1.0",
         "drupal/field_group": ">1.0",
@@ -240,7 +239,6 @@
         "drupal/filter_perms": ">1.0",
         "drupal/fontyourface": "^3.0",
         "drupal/google_analytics_lite": ">1.0",
-        "drupal/google_map_field": "^1.1",
         "drupal/honeypot": ">1.0",
         "drupal/inline_entity_form": ">1.0",
         "drupal/key": ">1.0",
@@ -259,7 +257,6 @@
         "drupal/metatag": ">1.0-beta10",
         "drupal/migrate_manifest": ">1.0",
         "drupal/migrate_upgrade": ">1.0",
-        "drupal/mollom": ">1.1",
         "drupal/multiversion": ">1.0",
         "drupal/node_clone": ">1.0",
         "drupal/omega": ">1.0",
@@ -283,8 +280,8 @@
         "drupal/views_infinite_scroll": ">1.0",
         "drupal/workbench_moderation": ">1.0",
         "drupal/workspace": ">1.0-alpha",
-        "drupal/yamlform": ">1.0",
         "drupal/youtube": "1.x-dev",
+        "drupal/webform": ">1.0",
 
         "library/ckeditor": "4.5.11",
         "library/codemirror": "5.21.0",
@@ -299,7 +296,8 @@
         "library/select2": "4.0.1",
         "ahebrank/eva": "dev-8.x-1.x",
         "library/fontfaceobserver": "2.0.5",
-        "drupal/simple_sitemap": "^2.7"
+        "drupal/simple_sitemap": "^2.7",
+        "drupal/tac_lite": "^1.1"
     },
     "require-dev": {
        "behat/mink": "~1.7",
