@@ -1,0 +1,21 @@
+uuid: 45977704-cf26-45cb-8ac5-e16d2841310b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_security_notice_level
+    - node.type.page
+  module:
+    - options
+id: node.page.field_security_notice_level
+field_name: field_security_notice_level
+entity_type: node
+bundle: page
+label: 'Security Notice Level'
+description: 'This is required for security notices.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

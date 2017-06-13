@@ -1,0 +1,13 @@
+uuid: a9dd38a7-1528-4eb0-82d6-00a65e8d4af9
+langcode: en
+status: true
+dependencies:
+  module:
+    - mollom
+_core:
+  default_config_hash: HX1_9T0mpGfkV9UbmnA3z7YJ3iO1WEHYD2u4pxiTnvg
+id: mollom_node_unpublish_action
+label: 'Report to Mollom and unpublish'
+type: node
+plugin: mollom_node_unpublish_action
+configuration: {  }

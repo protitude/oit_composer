@@ -1,0 +1,14 @@
+uuid: 23d86cd2-7165-4a2a-8aa6-20640b342692
+langcode: en
+status: true
+dependencies:
+  config:
+    - content_moderation.state.archived
+    - content_moderation.state.published
+_core:
+  default_config_hash: rleRk2LfFMW3uOtDkW7rzr7OdR3LAgKFTCjwUcf8Kbw
+id: archived_published
+label: Un-archive
+stateFrom: archived
+stateTo: published
+weight: -4

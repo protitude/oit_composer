@@ -1,0 +1,11 @@
+uuid: eabe2dc5-05e6-436e-a919-abec85c1327c
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: xXNQquMx-xkHje0RYjdxm2eUzMEr3qaOYHa-qaimATE
+id: published
+label: Published
+published: true
+default_revision: true
+weight: -9

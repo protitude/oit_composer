@@ -1,0 +1,18 @@
+uuid: 1ae3baea-3411-42a0-8095-dc09d3b78246
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Page
+type: page
+description: "A <em>page</em>, similar in form to a <em>story</em>, is a simple method for creating and displaying information that rarely changes, such as an \"About us\" section of a website. By default, a <em>page</em> entry does not allow visitor comments and is not featured on the site's initial home page.\r\n<h3>Template:</h3> \r\n<ul>\r\n<li><a href=\"/oit/node/add/page/security_notice\">Security Notice</a></li>\r\n<li><a href=\"/oit/node/add/page/service\">Service</a></li>\r\n<li><a href=\"/oit/node/add/page/accessibility\">Accessibility</a></li>\r\n<li><a href=\"/oit/node/add/page/phish\">Phishing Email</a></li>\r\n<li><a href=\"/oit/node/add/page/tree\">Decision Tree</a></li>\r\n</ul>"
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

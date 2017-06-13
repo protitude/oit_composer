@@ -1,0 +1,14 @@
+uuid: 4427ff85-6c82-4e29-968b-0c1c33f6131f
+langcode: en
+status: true
+dependencies:
+  config:
+    - content_moderation.state.archived
+    - content_moderation.state.published
+_core:
+  default_config_hash: IeNBH7OjuyMxD5FnRDRQRSSDkiF7Fwsp9V845rJ56T0
+id: published_archived
+label: Archive
+stateFrom: published
+stateTo: archived
+weight: -6

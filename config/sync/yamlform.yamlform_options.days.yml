@@ -1,0 +1,12 @@
+uuid: 7bfb1749-29ff-4208-b020-b2cbd9cf5b06
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - yamlform
+_core:
+  default_config_hash: RZlc78nvTOuU4JwDfF4Wx45X3kpxocR7yjZQckF0kw0
+id: days
+label: Days
+options: "Sunday: Sunday\nMonday: Monday\nTuesday: Tuesday\nWednesday: Wednesday\nThursday: Thursday\nFriday: Friday\nSaturday: Saturday\n"

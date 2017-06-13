@@ -1,0 +1,19 @@
+uuid: 85071e70-f859-4f71-988c-b1168c8e5c7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_custom_css_js
+    - node.type.page
+id: node.page.field_custom_css_js
+field_name: field_custom_css_js
+entity_type: node
+bundle: page
+label: 'Custom CSS/JS'
+description: '<em>Advanced users only.</em> Add custom css/js to a page here. Use with caution and do not use external scripts in here.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

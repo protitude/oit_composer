@@ -1,0 +1,21 @@
+uuid: 66641013-9b28-48dd-9fdc-10500952e28d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news_status
+    - node.type.news
+  module:
+    - options
+id: node.news.field_news_status
+field_name: field_news_status
+entity_type: node
+bundle: news
+label: Status
+description: 'Mark the status of this news item. Articles will be archived after 90 days and Announcements will be unpublished after 90 days. Do not select Archive for new items.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

@@ -1,0 +1,14 @@
+name: 'Office of Information Technology'
+mail: help@colorado.edu
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /front
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: 5kV-N0l5ykA6rd49Let2PfICrFxMON_f3yYvlRXupOE
+uuid: 6fab6f07-d2d4-4b0d-b21c-e82ef337823e
