@@ -29,6 +29,115 @@
         {
           "type": "package",
           "package": {
+            "name": "library/ckeditor",
+            "version": "4.5.11",
+            "type": "drupal-library",
+            "dist": {
+              "url": "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.5.11/ckeditor_4.5.11_standard.zip",
+              "type": "zip"
+            }
+          }
+        },
+        {
+          "type": "package",
+          "package": {
+            "name": "library/jquery.inputmask",
+            "version": "3.3.3",
+            "type": "drupal-library",
+            "dist": {
+              "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/3.3.3.zip",
+              "type": "zip"
+            }
+          }
+        },
+        {
+          "type": "package",
+          "package": {
+            "name": "library/jquery.timepicker",
+            "version": "1.11.8",
+            "type": "drupal-library",
+            "dist": {
+              "url": "https://github.com/jonthornton/jquery-timepicker/archive/1.11.8.zip",
+              "type": "zip"
+            }
+          }
+        },
+        {
+          "type": "package",
+          "package": {
+            "name": "library/jquery.toggles",
+            "version": "4.0.0",
+            "type": "drupal-library",
+            "dist": {
+              "url": "https://github.com/simontabor/jquery-toggles/archive/v4.0.0.zip",
+              "type": "zip"
+            }
+          }
+        },
+        {
+          "type": "package",
+          "package": {
+            "name": "library/word-and-character-counter",
+            "version": "1.6.0",
+            "type": "drupal-library",
+            "dist": {
+              "url": "https://github.com/qwertypants/jQuery-Word-and-Character-Counter-Plugin/archive/2.3.5.zip",
+              "type": "zip"
+            }
+          }
+        },
+        {
+          "type": "package",
+          "package": {
+            "name": "library/rateit",
+            "version": "1.1.1",
+            "type": "drupal-library",
+            "dist": {
+              "url": "https://github.com/gjunge/rateit.js/archive/1.1.1.zip ",
+              "type": "zip"
+            }
+          }
+        },
+        {
+          "type": "package",
+          "package": {
+            "name": "library/signature_pad",
+            "version": "1.5.3",
+            "type": "drupal-library",
+            "dist": {
+              "url": "https://github.com/szimek/signature_pad/archive/v1.5.3.zip ",
+              "type": "zip"
+            }
+          }
+        },
+        {
+          "type": "package",
+          "package": {
+            "name": "library/geocomplete",
+            "version": "1.7.0",
+            "type": "drupal-library",
+            "source": {
+              "url": "https://github.com/ubilabs/geocomplete.git",
+              "type": "git",
+                "reference": "master"
+            }
+          }
+        },
+        {
+          "type": "package",
+          "package": {
+            "name": "library/codemirror",
+            "version": "5.21.0",
+            "type": "drupal-library",
+            "dist": {
+              "url": "https://github.com/components/codemirror/archive/5.21.0.zip",
+              "type": "zip"
+            }
+          }
+        },
+        {
+          "type": "package",
+          "package": {
             "name": "library/select2",
             "version": "4.0.1",
             "type": "drupal-library",
@@ -129,6 +238,7 @@
         "drupal/colorbox": ">1.1",
         "drupal/components": ">1.0",
         "drupal/config_update": ">1.0",
+        "drupal/config_split": ">1.0",
         "drupal/contact_storage": ">1.0",
         "drupal/context": ">1.0",
         "drupal/ctools": ">1.0",
@@ -198,7 +308,15 @@
         "drupal/yamlform": ">1.0",
         "drupal/youtube": "1.x-dev",
 
-        "library/garlicjs": "1.2.3",
+        "library/ckeditor": "4.5.11",
+        "library/codemirror": "5.21.0",
+        "library/geocomplete": "1.7.0",
+        "library/jquery.inputmask": "3.3.3",
+        "library/jquery.timepicker": "1.11.8",
+        "library/jquery.toggles": "4.0.0",
+        "library/word-and-character-counter": "1.6.0",
+        "library/rateit": "1.1.1",
+        "library/signature_pad": "1.5.3",
         "library/colorbox": "1.0",
         "library/select2": "4.0.1",
         "ahebrank/eva": "dev-8.x-1.x",

@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the zap_initialize module.
+ */
+
+use Drupal\user\Entity\User;
+use Drupal\user\RoleInterface;
+
+/**
+ * Implements hook_install().
+ */
+function zap_initialize_install() {
+  \Drupal::configFactory()->getEditable('system.site')->set('name', 'Office of Information Technology')->save(TRUE);
+  \Drupal::configFactory()->getEditable('system.site')->set('mail', 'help@colorado.edu')->save(TRUE);
+   $terms = array(
+     'Page Category',
+     'News',
+     'Service',
+     'Tutorial'
+   );
+   _zap_taxonomy_terms_multiple($terms, 'oit_categories');
+  $module_list = array(
+    'filefield_paths',
+    'yamlform',
+    'yamlform_ui'
+  );
+  \Drupal::service('module_installer')->install($module_list, TRUE);
+}
+
+function _zap_taxonomy_terms_multiple($terms, $vid) {
+  foreach ($terms as $term) {
+    $new_term = \Drupal\taxonomy\Entity\Term::create([
+      'vid' => $vid,
+      'name' => $term,
+    ]);
+    $new_term->save();
+  }
+}

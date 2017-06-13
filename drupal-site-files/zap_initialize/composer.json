@@ -1,0 +1,14 @@
+{
+  "name": "drupal/zap_initialize",
+  "type": "drupal-module",
+  "description": "Initialize zap profile tasks/modules",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "http://drupal.org/project/zap_initialize",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/zap_initialize",
+    "source": "http://cgit.drupalcode.org/zap_initialize"
+  },
+  "require": { }
+}

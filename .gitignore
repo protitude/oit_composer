@@ -4,3 +4,4 @@ oit
 oit/*
 backups
 drupal-site-files/files
+drupal-site-files/settings.local.php

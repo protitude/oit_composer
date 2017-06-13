@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1585e864628cec013948eb0396320072",
+    "content-hash": "e71a7c3a554381cf27e8ca268ed1903e",
     "packages": [
         {
             "name": "ahebrank/eva",
@@ -404,16 +404,16 @@
         },
         {
             "name": "consolidation/annotated-command",
-            "version": "2.3.1",
+            "version": "2.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/annotated-command.git",
-                "reference": "46ad263b21517a2aafe21d4651e06c553b8309a7"
+                "reference": "c23ebfa81cb8c06dcea63afde98f444e818bceb2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/46ad263b21517a2aafe21d4651e06c553b8309a7",
-                "reference": "46ad263b21517a2aafe21d4651e06c553b8309a7",
+                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/c23ebfa81cb8c06dcea63afde98f444e818bceb2",
+                "reference": "c23ebfa81cb8c06dcea63afde98f444e818bceb2",
                 "shasum": ""
             },
             "require": {
@@ -452,7 +452,7 @@
                 }
             ],
             "description": "Initialize Symfony Console commands from annotated command class methods.",
-            "time": "2017-01-21T06:15:21+00:00"
+            "time": "2017-01-30T22:46:53+00:00"
         },
         {
             "name": "consolidation/output-formatters",
@@ -1541,6 +1541,56 @@
                 "source": "http://cgit.drupalcode.org/components"
             },
             "time": "2016-11-12 04:09:46"
+        },
+        {
+            "name": "drupal/config_split",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/config_split",
+                "reference": "95252231fad30deb7d44777884d64cde28ecd529"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta1+6-dev",
+                    "datestamp": "1485178383"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "ademarco",
+                    "homepage": "https://www.drupal.org/user/186696"
+                },
+                {
+                    "name": "bircher",
+                    "homepage": "https://www.drupal.org/user/1344166"
+                },
+                {
+                    "name": "pescetti",
+                    "homepage": "https://www.drupal.org/user/436244"
+                }
+            ],
+            "description": "Configuration filter for importing and exporting extra config",
+            "homepage": "https://www.drupal.org/project/config_split",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/config_split",
+                "issues": "https://www.drupal.org/project/issues/config_split"
+            },
+            "time": "2017-01-23 13:44:13"
         },
         {
             "name": "drupal/config_update",
@@ -2878,11 +2928,17 @@
         },
         {
             "name": "drupal/entity_reference_revisions",
-            "version": "dev-1.x",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/entity_reference_revisions",
-                "reference": "676442fe1caf1783fe33d27bd0b21c9c40552f08"
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_reference_revisions-8.x-1.2.zip",
+                "reference": null,
+                "shasum": "15261a4237cc2a743522a7bd81e9f34e01d12843"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -2896,8 +2952,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0+13-dev",
-                    "datestamp": "1485168483"
+                    "version": "8.x-1.2",
+                    "datestamp": "1485790085"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2922,8 +2978,7 @@
             "homepage": "https://www.drupal.org/project/entity_reference_revisions",
             "support": {
                 "source": "http://cgit.drupalcode.org/entity_reference_revisions"
-            },
-            "time": "2017-01-23 11:07:52"
+            }
         },
         {
             "name": "drupal/entityqueue",
@@ -3834,7 +3889,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/libraries",
-                "reference": "5e7ea584db3e5d9aa5acac130bda1359ad048f5c"
+                "reference": "32f503ffd9fc3f2c175e2144136702da0fa7619d"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -3878,7 +3933,7 @@
                 "issues": "http://drupal.org/project/issues/libraries",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2017-01-04 16:26:54"
+            "time": "2017-01-27 17:42:46"
         },
         {
             "name": "drupal/lightning",
@@ -5205,7 +5260,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/paragraphs",
-                "reference": "10c5547af865ad5aa05411113a882c8540c1b93a"
+                "reference": "1fcbee773a56115d092e8eb19f237392624ebaf4"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -5225,8 +5280,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0+53-dev",
-                    "datestamp": "1485166983"
+                    "version": "8.x-1.0+55-dev",
+                    "datestamp": "1485253082"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5256,7 +5311,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/paragraphs"
             },
-            "time": "2017-01-23 12:59:50"
+            "time": "2017-01-27 13:35:32"
         },
         {
             "name": "drupal/pathauto",
@@ -5264,7 +5319,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/pathauto",
-                "reference": "fab13069edda3a88a0c2ea145e87b923e8f1a18d"
+                "reference": "afac06bd68337785b538f71dd364843c8748ccc1"
             },
             "require": {
                 "drupal/core": "*",
@@ -5277,8 +5332,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta1+14-dev",
-                    "datestamp": "1484781184"
+                    "version": "8.x-1.0-rc1+0-dev",
+                    "datestamp": "1485702183"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5308,7 +5363,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/pathauto"
             },
-            "time": "2017-01-23 07:20:11"
+            "time": "2017-01-29 14:59:51"
         },
         {
             "name": "drupal/persistent_login",
@@ -6965,6 +7020,28 @@
             "time": "2015-04-20T18:58:01+00:00"
         },
         {
+            "name": "library/ckeditor",
+            "version": "4.5.11",
+            "dist": {
+                "type": "zip",
+                "url": "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.5.11/ckeditor_4.5.11_standard.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "drupal-library"
+        },
+        {
+            "name": "library/codemirror",
+            "version": "5.21.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/components/codemirror/archive/5.21.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "drupal-library"
+        },
+        {
             "name": "library/colorbox",
             "version": "1.0",
             "dist": {
@@ -6986,11 +7063,54 @@
             "type": "drupal-library"
         },
         {
-            "name": "library/garlicjs",
-            "version": "1.2.3",
+            "name": "library/geocomplete",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ubilabs/geocomplete.git",
+                "reference": "master"
+            },
+            "type": "drupal-library"
+        },
+        {
+            "name": "library/jquery.inputmask",
+            "version": "3.3.3",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/guillaumepotier/Garlic.js/archive/1.2.3.zip",
+                "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/3.3.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "drupal-library"
+        },
+        {
+            "name": "library/jquery.timepicker",
+            "version": "1.11.8",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/jonthornton/jquery-timepicker/archive/1.11.8.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "drupal-library"
+        },
+        {
+            "name": "library/jquery.toggles",
+            "version": "4.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/simontabor/jquery-toggles/archive/v4.0.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "drupal-library"
+        },
+        {
+            "name": "library/rateit",
+            "version": "1.1.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/gjunge/rateit.js/archive/1.1.1.zip ",
                 "reference": null,
                 "shasum": null
             },
@@ -7003,6 +7123,28 @@
                 "type": "git",
                 "url": "https://github.com/select2/select2.git",
                 "reference": "master"
+            },
+            "type": "drupal-library"
+        },
+        {
+            "name": "library/signature_pad",
+            "version": "1.5.3",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/szimek/signature_pad/archive/v1.5.3.zip ",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "drupal-library"
+        },
+        {
+            "name": "library/word-and-character-counter",
+            "version": "1.6.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/qwertypants/jQuery-Word-and-Character-Counter-Plugin/archive/2.3.5.zip",
+                "reference": null,
+                "shasum": null
             },
             "type": "drupal-library"
         },
@@ -10454,16 +10596,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.8.32",
+            "version": "4.8.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "f5e1941a8dacf0d904753ff2895c6f68e54bcee1"
+                "reference": "7eb45205d27edd94bd2b3614085ea158bd1e2bca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/f5e1941a8dacf0d904753ff2895c6f68e54bcee1",
-                "reference": "f5e1941a8dacf0d904753ff2895c6f68e54bcee1",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/7eb45205d27edd94bd2b3614085ea158bd1e2bca",
+                "reference": "7eb45205d27edd94bd2b3614085ea158bd1e2bca",
                 "shasum": ""
             },
             "require": {
@@ -10522,7 +10664,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2017-01-22T08:37:05+00:00"
+            "time": "2017-01-26T16:15:36+00:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -10582,16 +10724,16 @@
         },
         {
             "name": "sebastian/comparator",
-            "version": "1.2.2",
+            "version": "1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "6a1ed12e8b2409076ab22e3897126211ff8b1f7f"
+                "reference": "2b7424b55f5047b47ac6e5ccb20b2aea4011d9be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/6a1ed12e8b2409076ab22e3897126211ff8b1f7f",
-                "reference": "6a1ed12e8b2409076ab22e3897126211ff8b1f7f",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/2b7424b55f5047b47ac6e5ccb20b2aea4011d9be",
+                "reference": "2b7424b55f5047b47ac6e5ccb20b2aea4011d9be",
                 "shasum": ""
             },
             "require": {
@@ -10642,7 +10784,7 @@
                 "compare",
                 "equality"
             ],
-            "time": "2016-11-19T09:18:40+00:00"
+            "time": "2017-01-29T09:50:25+00:00"
         },
         {
             "name": "sebastian/diff",
