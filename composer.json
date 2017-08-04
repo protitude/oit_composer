@@ -9,195 +9,210 @@
             "role": ""
         }
     ],
-    "repositories": [
-        {
+    "repositories": {
+        "0": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
-        {
-          "type": "package",
-          "package": {
-            "name": "library/garlicjs",
-            "version": "1.2.3",
-            "type": "drupal-library",
-            "dist": {
-              "url": "https://github.com/guillaumepotier/Garlic.js/archive/1.2.3.zip",
-              "type": "zip"
+        "1": {
+            "type": "package",
+            "package": {
+                "name": "library/garlicjs",
+                "version": "1.2.3",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/guillaumepotier/Garlic.js/archive/1.2.3.zip",
+                    "type": "zip"
+                }
             }
-          }
         },
-        {
-          "type": "package",
-          "package": {
-            "name": "library/ckeditor",
-            "version": "4.5.11",
-            "type": "drupal-library",
-            "dist": {
-              "url": "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.5.11/ckeditor_4.5.11_standard.zip",
-              "type": "zip"
+        "2": {
+            "type": "package",
+            "package": {
+                "name": "library/ckeditor",
+                "version": "4.5.11",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.5.11/ckeditor_4.5.11_standard.zip",
+                    "type": "zip"
+                }
             }
-          }
         },
-        {
-          "type": "package",
-          "package": {
-            "name": "library/jquery.inputmask",
-            "version": "3.3.3",
-            "type": "drupal-library",
-            "dist": {
-              "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/3.3.3.zip",
-              "type": "zip"
+        "3": {
+            "type": "package",
+            "package": {
+                "name": "library/jquery.inputmask",
+                "version": "3.3.3",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/3.3.3.zip",
+                    "type": "zip"
+                }
             }
-          }
         },
-        {
-          "type": "package",
-          "package": {
-            "name": "library/jquery.timepicker",
-            "version": "1.11.8",
-            "type": "drupal-library",
-            "dist": {
-              "url": "https://github.com/jonthornton/jquery-timepicker/archive/1.11.8.zip",
-              "type": "zip"
+        "4": {
+            "type": "package",
+            "package": {
+                "name": "library/jquery.timepicker",
+                "version": "1.11.8",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/jonthornton/jquery-timepicker/archive/1.11.8.zip",
+                    "type": "zip"
+                }
             }
-          }
         },
-        {
-          "type": "package",
-          "package": {
-            "name": "library/jquery.toggles",
-            "version": "4.0.0",
-            "type": "drupal-library",
-            "dist": {
-              "url": "https://github.com/simontabor/jquery-toggles/archive/v4.0.0.zip",
-              "type": "zip"
+        "5": {
+            "type": "package",
+            "package": {
+                "name": "library/jquery.toggles",
+                "version": "4.0.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/simontabor/jquery-toggles/archive/v4.0.0.zip",
+                    "type": "zip"
+                }
             }
-          }
         },
-        {
-          "type": "package",
-          "package": {
-            "name": "library/word-and-character-counter",
-            "version": "1.6.0",
-            "type": "drupal-library",
-            "dist": {
-              "url": "https://github.com/qwertypants/jQuery-Word-and-Character-Counter-Plugin/archive/2.3.5.zip",
-              "type": "zip"
+        "6": {
+            "type": "package",
+            "package": {
+                "name": "library/word-and-character-counter",
+                "version": "1.6.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/qwertypants/jQuery-Word-and-Character-Counter-Plugin/archive/2.3.5.zip",
+                    "type": "zip"
+                }
             }
-          }
         },
-        {
-          "type": "package",
-          "package": {
-            "name": "library/rateit",
-            "version": "1.1.1",
-            "type": "drupal-library",
-            "dist": {
-              "url": "https://github.com/gjunge/rateit.js/archive/1.1.1.zip ",
-              "type": "zip"
+        "7": {
+            "type": "package",
+            "package": {
+                "name": "library/rateit",
+                "version": "1.1.1",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/gjunge/rateit.js/archive/1.1.1.zip ",
+                    "type": "zip"
+                }
             }
-          }
         },
-        {
-          "type": "package",
-          "package": {
-            "name": "library/signature_pad",
-            "version": "1.5.3",
-            "type": "drupal-library",
-            "dist": {
-              "url": "https://github.com/szimek/signature_pad/archive/v1.5.3.zip ",
-              "type": "zip"
+        "8": {
+            "type": "package",
+            "package": {
+                "name": "library/signature_pad",
+                "version": "1.5.3",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/szimek/signature_pad/archive/v1.5.3.zip ",
+                    "type": "zip"
+                }
             }
-          }
         },
-        {
-          "type": "package",
-          "package": {
-            "name": "library/geocomplete",
-            "version": "1.7.0",
-            "type": "drupal-library",
-            "source": {
-              "url": "https://github.com/ubilabs/geocomplete.git",
-              "type": "git",
-                "reference": "master"
+        "9": {
+            "type": "package",
+            "package": {
+                "name": "library/geocomplete",
+                "version": "1.7.0",
+                "type": "drupal-library",
+                "source": {
+                    "url": "https://github.com/ubilabs/geocomplete.git",
+                    "type": "git",
+                    "reference": "master"
+                }
             }
-          }
         },
-        {
-          "type": "package",
-          "package": {
-            "name": "library/codemirror",
-            "version": "5.21.0",
-            "type": "drupal-library",
-            "dist": {
-              "url": "https://github.com/components/codemirror/archive/5.21.0.zip",
-              "type": "zip"
+        "10": {
+            "type": "package",
+            "package": {
+                "name": "library/codemirror",
+                "version": "5.21.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/components/codemirror/archive/5.21.0.zip",
+                    "type": "zip"
+                }
             }
-          }
         },
-        {
-          "type": "package",
-          "package": {
-            "name": "library/select2",
-            "version": "4.0.1",
-            "type": "drupal-library",
-            "source": {
-              "url": "https://github.com/select2/select2.git",
-              "type": "git",
-                "reference": "master"
+        "11": {
+            "type": "package",
+            "package": {
+                "name": "library/select2",
+                "version": "4.0.1",
+                "type": "drupal-library",
+                "source": {
+                    "url": "https://github.com/select2/select2.git",
+                    "type": "git",
+                    "reference": "master"
+                }
             }
-          }
         },
-        {
-          "type": "package",
-          "package": {
-            "name": "library/fontfaceobserver",
-            "version": "2.0.5",
-            "type": "drupal-library",
-            "source": {
-              "url": "https://github.com/bramstein/fontfaceobserver.git",
-              "type": "git",
-                "reference": "master"
+        "12": {
+            "type": "package",
+            "package": {
+                "name": "library/fontfaceobserver",
+                "version": "2.0.5",
+                "type": "drupal-library",
+                "source": {
+                    "url": "https://github.com/bramstein/fontfaceobserver.git",
+                    "type": "git",
+                    "reference": "master"
+                }
             }
-          }
         },
-        {
-          "type": "package",
-          "package": {
-            "name": "library/colorbox",
-            "version": "1.0",
-            "type": "drupal-library",
-            "dist": {
-              "url": "https://github.com/jackmoore/colorbox/archive/1.x.zip",
-              "type": "zip"
+        "13": {
+            "type": "package",
+            "package": {
+                "name": "library/colorbox",
+                "version": "1.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/jackmoore/colorbox/archive/1.x.zip",
+                    "type": "zip"
+                }
             }
-          }
         },
-        {
-          "type": "package",
-          "package": {
-            "name": "drupal/views_eva",
-            "version": "8.1",
-            "type": "drupal-module",
-            "source": {
-              "url": "https://github.com/ahebrank/eva.git",
-              "type": "git",
-                "reference": "8.x-1.x"
+        "14": {
+            "type": "package",
+            "package": {
+                "name": "drupal/views_eva",
+                "version": "8.1",
+                "type": "drupal-module",
+                "source": {
+                    "url": "https://github.com/ahebrank/eva.git",
+                    "type": "git",
+                    "reference": "8.x-1.x"
+                }
             }
-          }
+        },
+        "eleven": {
+            "type": "vcs",
+            "url": "https://github.com/thememachine/eleven"
         }
-    ],
+    },
     "extra": {
-      "installer-paths": {
-          "web/core": ["type:drupal-core"],
-          "web/modules/contrib/{$name}": ["type:drupal-module"],
-          "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-          "web/themes/contrib/{$name}": ["type:drupal-theme"],
-          "web/libraries/{$name}": ["type:drupal-library"],
-          "drush/contrib/{$name}": ["type:drupal-drush"]
-      },
-      "patches": {
-      }
+        "installer-paths": {
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "drush/contrib/{$name}": [
+                "type:drupal-drush"
+            ]
+        },
+        "patches": []
     },
     "require": {
         "composer/installers": "^1.2",
@@ -206,7 +221,6 @@
         "drupal/core": "~8.0",
         "drush/drush": "~8.0",
         "drupal/console": "~1.0",
-
         "drupal/admin_toolbar": ">1.0",
         "drupal/admin_toolbar_tools": ">1.0",
         "drupal/auto_entitylabel": ">1.0",
@@ -282,7 +296,6 @@
         "drupal/workspace": ">1.0-alpha",
         "drupal/youtube": "1.x-dev",
         "drupal/webform": ">1.0",
-
         "library/ckeditor": "4.5.11",
         "library/codemirror": "5.21.0",
         "library/geocomplete": "1.7.0",
@@ -297,10 +310,11 @@
         "ahebrank/eva": "dev-8.x-1.x",
         "library/fontfaceobserver": "2.0.5",
         "drupal/simple_sitemap": "^2.7",
-        "drupal/tac_lite": "^1.1"
+        "drupal/tac_lite": "^1.1",
+        "thememachine/eleven": "^8.0@beta"
     },
     "require-dev": {
-       "behat/mink": "~1.7",
+        "behat/mink": "~1.7",
         "behat/mink-goutte-driver": "~1.2",
         "jcalderonzumba/gastonjs": "~1.0.2",
         "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",

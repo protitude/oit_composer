@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7887e18aea2f3ade6fbb885ac1f66a00",
+    "content-hash": "cbd328c7dd709bcb21c91d42e0812104",
     "packages": [
         {
             "name": "ahebrank/eva",
@@ -9422,6 +9422,31 @@
             "time": "2017-05-01T14:31:55+00:00"
         },
         {
+            "name": "thememachine/eleven",
+            "version": "8.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thememachine/eleven.git",
+                "reference": "b31e7e5b3f53ae45118ac48bb6b081f031e3913f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thememachine/eleven/zipball/b31e7e5b3f53ae45118ac48bb6b081f031e3913f",
+                "reference": "b31e7e5b3f53ae45118ac48bb6b081f031e3913f",
+                "shasum": ""
+            },
+            "type": "drupal-theme",
+            "license": [
+                "GPL-3"
+            ],
+            "description": "this one goes to 11",
+            "support": {
+                "source": "https://github.com/thememachine/eleven/tree/8.0-beta1",
+                "issues": "https://github.com/thememachine/eleven/issues"
+            },
+            "time": "2017-08-01T19:59:48+00:00"
+        },
+        {
             "name": "twig/twig",
             "version": "v1.33.2",
             "source": {
@@ -11166,7 +11191,8 @@
     "stability-flags": {
         "drupal/filefield_paths": 20,
         "drupal/youtube": 20,
-        "ahebrank/eva": 20
+        "ahebrank/eva": 20,
+        "thememachine/eleven": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
