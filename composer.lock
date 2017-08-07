@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "cbd328c7dd709bcb21c91d42e0812104",
+    "content-hash": "0ba248c6b02364938cf31fa8101e00e2",
     "packages": [
         {
             "name": "ahebrank/eva",
@@ -5645,11 +5645,17 @@
         },
         {
             "name": "drupal/shortcode",
-            "version": "dev-1.x",
+            "version": "1.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/shortcode",
-                "reference": "7af7328effa329c49b831b1d3b4bc3bb50498cc2"
+                "reference": "8.x-1.0-rc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/shortcode-8.x-1.0-rc1.zip",
+                "reference": null,
+                "shasum": "6837969d2ff684e9dba02c234d13f2a36c54f67d"
             },
             "require": {
                 "drupal/core": "*"
@@ -5660,8 +5666,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha2+6-dev",
-                    "datestamp": "1487348584"
+                    "version": "8.x-1.0-rc1",
+                    "datestamp": "1487350082"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5682,8 +5688,7 @@
             "homepage": "https://www.drupal.org/project/shortcode",
             "support": {
                 "source": "http://cgit.drupalcode.org/shortcode"
-            },
-            "time": "2017-02-17 16:18:58"
+            }
         },
         {
             "name": "drupal/simple_sitemap",
@@ -11190,6 +11195,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/filefield_paths": 20,
+        "drupal/shortcode": 5,
         "drupal/youtube": 20,
         "ahebrank/eva": 20,
         "thememachine/eleven": 10

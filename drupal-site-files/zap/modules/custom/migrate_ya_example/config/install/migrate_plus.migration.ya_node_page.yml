@@ -34,6 +34,9 @@ process:
   revision_timestamp: timestamp
   field_overview: body
   body: body
+  body_format:
+    plugin: default_value
+    default_value: plain_text
   field_drupal8_images:
     plugin: d6_cck_file
     # migration key is not really needed plugin d6_cck_file will always look for migration name d6_file
