@@ -32,17 +32,13 @@ process:
     source: revision_uid
   revision_log: log
   revision_timestamp: timestamp
-  field_overview: body
   body: body
-  body_format:
-    plugin: default_value
-    default_value: plain_text
-  field_drupal8_images:
+  field_css_js: field_page_footer
+  field_upload:
     plugin: d6_cck_file
-    # migration key is not really needed plugin d6_cck_file will always look for migration name d6_file
-    # its hardcoded :(
+    source: upload
     migration: d6_file
-    source: field_drupal7_images
+    source: upload
 destination:
   plugin: 'entity:node'
   default_bundle: page

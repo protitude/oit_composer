@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies: {  }
+id: ya_taxonomy_vocabulary
+migration_tags: null
+migration_group: ya_example
+label: Taxonomy vocabularies
+source:
+  plugin: d7_taxonomy_vocabulary
+process:
+  vid:
+    -
+      plugin: machine_name
+      source: name
+    -
+      plugin: make_unique_entity_field
+      entity_type: taxonomy_vocabulary
+      field: vid
+      length: 32
+      migrated: true
+  label: name
+  name: name
+  description: description
+  hierarchy: hierarchy
+  weight: weight
+destination:
+  plugin: entity:taxonomy_vocabulary
