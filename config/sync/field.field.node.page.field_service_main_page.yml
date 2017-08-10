@@ -1,0 +1,23 @@
+uuid: 95d83f3b-de33-43dc-89cd-595180bc830e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_service_main_page
+    - node.type.page
+id: node.page.field_service_main_page
+field_name: field_service_main_page
+entity_type: node
+bundle: page
+label: 'Is this the main service page?'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

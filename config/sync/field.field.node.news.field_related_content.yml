@@ -1,0 +1,29 @@
+uuid: cd5854a7-ad36-4253-9377-72c2be4d0e8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_content
+    - node.type.news
+    - node.type.page
+id: node.news.field_related_content
+field_name: field_related_content
+entity_type: node
+bundle: news
+label: 'Related Content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      news: news
+      page: page
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: news
+field_type: entity_reference

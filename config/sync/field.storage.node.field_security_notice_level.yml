@@ -1,0 +1,30 @@
+uuid: 88e9ba0e-c43e-4e72-b26a-6863109fc4a1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_security_notice_level
+field_name: field_security_notice_level
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 0
+      label: URGENT
+    -
+      value: 1
+      label: SEVERE
+    -
+      value: 2
+      label: IMPORTANT
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
