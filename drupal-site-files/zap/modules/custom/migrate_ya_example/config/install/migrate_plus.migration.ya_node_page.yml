@@ -34,6 +34,7 @@ process:
   revision_timestamp: timestamp
   body: body
   field_css_js: field_page_footer
+  field_related_content: field_related_content
   field_upload:
     plugin: d6_cck_file
     source: upload
