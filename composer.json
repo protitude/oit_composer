@@ -247,7 +247,7 @@
         "drupal/entityqueue": ">1.0",
         "drupal/extlink": ">1.0",
         "drupal/fences": ">1.0",
-        "drupal/field_collection": ">1.0",
+        "drupal/field_collection": "^1.0@alpha",
         "drupal/field_group": ">1.0",
         "drupal/filefield_paths": "1.x-dev",
         "drupal/filter_perms": ">1.0",
