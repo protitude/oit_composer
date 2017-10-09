@@ -21,6 +21,12 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
+    region: content
   links:
     weight: 100
-hidden: {  }
+    region: content
+hidden:
+  field_news_status: true
+  field_oit_news_front_image: true
+  field_related_content: true
+  field_upload: true

@@ -29,6 +29,9 @@ hidden:
   field_access_control: true
   field_category: true
   field_css_js: true
+  field_custom_css_js: true
   field_faq: true
   field_related_content: true
+  field_security_notice_level: true
+  field_service_main_page: true
   field_upload: true

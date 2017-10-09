@@ -128,4 +128,7 @@ content:
       placeholder: ''
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_custom_css_js: true
+  field_security_notice_level: true
+  field_service_main_page: true
