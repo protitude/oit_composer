@@ -35,6 +35,8 @@ process:
   body: body
   field_css_js: field_page_footer
   field_related_content: field_related_content
+  field_category: field_oit_category
+  field_access_control: 'field_access_control_2'
   field_upload:
     plugin: d6_cck_file
     source: upload
