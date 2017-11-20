@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e45c1f3cc5a60ccbf0c5051324fe3053",
+    "content-hash": "2876aa77444ed2d0cd84ae9366e3f0a8",
     "packages": [
         {
             "name": "ahebrank/eva",
@@ -1212,17 +1212,11 @@
         },
         {
             "name": "drupal/admin_toolbar",
-            "version": "1.20.0",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/admin_toolbar",
-                "reference": "8.x-1.20"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.20.zip",
-                "reference": "8.x-1.20",
-                "shasum": "ebeb6b630c0c614b36263ac4a024b269113b6a99"
+                "reference": "b063714d13d961e54fa4b08b85cdaa66bc9b3f7c"
             },
             "require": {
                 "drupal/core": "*"
@@ -1233,11 +1227,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.20",
-                    "datestamp": "1505199844",
+                    "version": "8.x-1.21+0-dev",
+                    "datestamp": "1511190785",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -1280,11 +1274,12 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/admin_toolbar",
                 "issues": "https://www.drupal.org/project/issues/admin_toolbar"
-            }
+            },
+            "time": "2017-11-20 22:05:04"
         },
         {
             "name": "drupal/admin_toolbar_tools",
-            "version": "1.20.0",
+            "version": "dev-1.x",
             "require": {
                 "drupal/admin_toolbar": "self.version",
                 "drupal/core": "~8.0"
@@ -1295,11 +1290,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.20",
-                    "datestamp": "1505199844",
+                    "version": "8.x-1.21+0-dev",
+                    "datestamp": "1511190785",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
