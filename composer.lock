@@ -2330,12 +2330,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "16bfa225085d38264fe65ab1137a25b8925e0424"
+                "reference": "579bebfcaacd802f285e8835166cd59311fee772"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/16bfa225085d38264fe65ab1137a25b8925e0424",
-                "reference": "16bfa225085d38264fe65ab1137a25b8925e0424",
+                "url": "https://api.github.com/repos/drupal/core/zipball/579bebfcaacd802f285e8835166cd59311fee772",
+                "reference": "579bebfcaacd802f285e8835166cd59311fee772",
                 "shasum": ""
             },
             "require": {
@@ -2511,7 +2511,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2017-11-29 18:58:03"
+            "time": "2017-12-12 20:55:11"
         },
         {
             "name": "drupal/csv_serialization",
