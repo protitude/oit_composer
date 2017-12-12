@@ -47,5 +47,6 @@ destination:
   default_bundle: page
 migration_dependencies:
   required:
+    - ya_faq_paragraph
     - d6_file
     - ya_user
