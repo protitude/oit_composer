@@ -23,7 +23,7 @@
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "description": "Attach a view to an entity",
-            "time": "2017-08-15 13:28:58"
+            "time": "2017-08-15T13:28:58+00:00"
         },
         {
             "name": "alchemy/zippy",
@@ -1275,7 +1275,7 @@
                 "source": "http://cgit.drupalcode.org/admin_toolbar",
                 "issues": "https://www.drupal.org/project/issues/admin_toolbar"
             },
-            "time": "2017-11-20 22:05:04"
+            "time": "2017-11-20T22:05:04+00:00"
         },
         {
             "name": "drupal/admin_toolbar_tools",
@@ -1441,7 +1441,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/backup_migrate"
             },
-            "time": "2017-05-09 02:56:22"
+            "time": "2017-05-09T02:56:22+00:00"
         },
         {
             "name": "drupal/coffee",
@@ -1507,7 +1507,7 @@
                 "issues": "https://drupal.org/project/issues/coffee",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2017-05-09 08:49:39"
+            "time": "2017-05-09T08:49:39+00:00"
         },
         {
             "name": "drupal/colorbox",
@@ -1753,7 +1753,7 @@
                 "issues": "https://www.drupal.org/project/issues/config_split",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2017-08-22 20:05:39"
+            "time": "2017-08-22T20:05:39+00:00"
         },
         {
             "name": "drupal/config_update",
@@ -2229,7 +2229,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/contact_storage"
             },
-            "time": "2017-06-16 10:04:28"
+            "time": "2017-06-16T10:04:28+00:00"
         },
         {
             "name": "drupal/context",
@@ -2322,7 +2322,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/context"
             },
-            "time": "2015-01-06 19:19:17"
+            "time": "2015-01-06T19:19:17+00:00"
         },
         {
             "name": "drupal/core",
@@ -2511,7 +2511,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2017-12-12 20:55:11"
+            "time": "2017-12-12T20:55:11+00:00"
         },
         {
             "name": "drupal/csv_serialization",
@@ -2794,7 +2794,7 @@
                 "issues": "http://drupal.org/project/devel",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2017-07-24 23:09:34"
+            "time": "2017-07-24T23:09:34+00:00"
         },
         {
             "name": "drupal/diff",
@@ -2875,7 +2875,7 @@
                 "source": "http://cgit.drupalcode.org/diff",
                 "issues": "https://www.drupal.org/project/issues/diff"
             },
-            "time": "2017-07-31 02:16:49"
+            "time": "2017-07-31T02:16:49+00:00"
         },
         {
             "name": "drupal/direct_queue",
@@ -3015,7 +3015,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/eform"
             },
-            "time": "2016-04-25 18:53:35"
+            "time": "2016-04-25T18:53:35+00:00"
         },
         {
             "name": "drupal/embed",
@@ -3138,7 +3138,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/entity"
             },
-            "time": "2017-03-08 21:07:49"
+            "time": "2017-03-08T21:07:49+00:00"
         },
         {
             "name": "drupal/entity_browser",
@@ -3286,7 +3286,7 @@
                 "issues": "https://www.drupal.org/project/issues/entity_embed",
                 "irc": "irc://irc.freenode.org/drupal-media"
             },
-            "time": "2017-03-29 03:07:13"
+            "time": "2017-03-29T03:07:13+00:00"
         },
         {
             "name": "drupal/entity_reference_revisions",
@@ -3394,7 +3394,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/entityqueue"
             },
-            "time": "2017-08-18 23:35:37"
+            "time": "2017-08-18T23:35:37+00:00"
         },
         {
             "name": "drupal/extlink",
@@ -3444,7 +3444,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/extlink"
             },
-            "time": "2017-08-22 23:20:59"
+            "time": "2017-08-22T23:20:59+00:00"
         },
         {
             "name": "drupal/fences",
@@ -3624,7 +3624,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/field_group"
             },
-            "time": "2017-07-13 22:41:32"
+            "time": "2017-07-13T22:41:32+00:00"
         },
         {
             "name": "drupal/filefield_paths",
@@ -3671,7 +3671,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/filefield_paths"
             },
-            "time": "2016-03-06 22:20:55"
+            "time": "2016-03-06T22:20:55+00:00"
         },
         {
             "name": "drupal/filter_perms",
@@ -3721,7 +3721,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/filter_perms"
             },
-            "time": "2016-07-27 19:01:11"
+            "time": "2016-07-27T19:01:11+00:00"
         },
         {
             "name": "drupal/fontyourface",
@@ -3948,7 +3948,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/inline_entity_form"
             },
-            "time": "2016-11-14 20:32:26"
+            "time": "2016-11-14T20:32:26+00:00"
         },
         {
             "name": "drupal/key",
@@ -4200,7 +4200,7 @@
                 "issues": "http://drupal.org/project/issues/libraries",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2017-03-15 17:04:08"
+            "time": "2017-03-15T17:04:08+00:00"
         },
         {
             "name": "drupal/lightning",
@@ -5155,7 +5155,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/multiversion"
             },
-            "time": "2017-07-21 09:48:02"
+            "time": "2017-07-21T09:48:02+00:00"
         },
         {
             "name": "drupal/node_clone",
@@ -5197,7 +5197,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/node_clone"
             },
-            "time": "2016-10-21 00:15:27"
+            "time": "2016-10-21T00:15:27+00:00"
         },
         {
             "name": "drupal/node_revision_delete",
@@ -5247,7 +5247,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/node_revision_delete"
             },
-            "time": "2017-08-09 16:08:25"
+            "time": "2017-08-09T16:08:25+00:00"
         },
         {
             "name": "drupal/omega",
@@ -5728,7 +5728,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/pathauto"
             },
-            "time": "2017-07-21 21:58:28"
+            "time": "2017-07-21T21:58:28+00:00"
         },
         {
             "name": "drupal/persistent_login",
@@ -5782,7 +5782,7 @@
                 "source": "http://cgit.drupalcode.org/persistent_login",
                 "issues": "http://drupal.org/project/issues/persistent_login"
             },
-            "time": "2017-03-03 10:53:37"
+            "time": "2017-03-03T10:53:37+00:00"
         },
         {
             "name": "drupal/quicktabs",
@@ -5907,7 +5907,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/redirect"
             },
-            "time": "2017-05-19 20:54:42"
+            "time": "2017-05-19T20:54:42+00:00"
         },
         {
             "name": "drupal/replication",
@@ -6082,7 +6082,7 @@
                 "source": "http://cgit.drupalcode.org/scheduler",
                 "issues": "https://www.drupal.org/project/issues/scheduler"
             },
-            "time": "2017-08-03 09:35:25"
+            "time": "2017-08-03T09:35:25+00:00"
         },
         {
             "name": "drupal/shortcode",
@@ -6128,7 +6128,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/shortcode"
             },
-            "time": "2017-02-17 16:18:58"
+            "time": "2017-02-17T16:18:58+00:00"
         },
         {
             "name": "drupal/simple_sitemap",
@@ -6297,7 +6297,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/token"
             },
-            "time": "2017-07-14 21:20:00"
+            "time": "2017-07-14T21:20:00+00:00"
         },
         {
             "name": "drupal/trash",
@@ -6355,7 +6355,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/trash"
             },
-            "time": "2016-09-23 07:19:08"
+            "time": "2016-09-23T07:19:08+00:00"
         },
         {
             "name": "drupal/video_embed_field",
@@ -6459,7 +6459,7 @@
                 "source": "http://cgit.drupalcode.org/views_accordion",
                 "issues": "https://www.drupal.org/project/issues/views_accordion"
             },
-            "time": "2017-05-14 17:44:36"
+            "time": "2017-05-14T17:44:36+00:00"
         },
         {
             "name": "drupal/views_data_export",
@@ -6522,7 +6522,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/views_data_export"
             },
-            "time": "2017-02-06 16:06:03"
+            "time": "2017-02-06T16:06:03+00:00"
         },
         {
             "name": "drupal/views_eva",
@@ -6889,7 +6889,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/youtube"
             },
-            "time": "2017-01-16 15:58:53"
+            "time": "2017-01-16T15:58:53+00:00"
         },
         {
             "name": "drush/drush",
@@ -8309,7 +8309,7 @@
                 "GPL-3.0+"
             ],
             "description": "Library used to find lowest common ancestor in graphs.",
-            "time": "2017-04-30 16:26:14"
+            "time": "2017-04-30T16:26:14+00:00"
         },
         {
             "name": "stack/builder",
@@ -10717,16 +10717,16 @@
         },
         {
             "name": "geerlingguy/drupal-vm",
-            "version": "4.7.0",
+            "version": "4.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/geerlingguy/drupal-vm.git",
-                "reference": "aedfc16db569a49c9a0c358212d7029483385b0d"
+                "reference": "1868184ad30ad407b1a2b659e719de9ce5bfd298"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/geerlingguy/drupal-vm/zipball/aedfc16db569a49c9a0c358212d7029483385b0d",
-                "reference": "aedfc16db569a49c9a0c358212d7029483385b0d",
+                "url": "https://api.github.com/repos/geerlingguy/drupal-vm/zipball/1868184ad30ad407b1a2b659e719de9ce5bfd298",
+                "reference": "1868184ad30ad407b1a2b659e719de9ce5bfd298",
                 "shasum": ""
             },
             "type": "vm",
@@ -10752,7 +10752,7 @@
                 "virtual machine",
                 "vm"
             ],
-            "time": "2017-10-07T04:35:10+00:00"
+            "time": "2018-03-10T17:47:45+00:00"
         },
         {
             "name": "jcalderonzumba/gastonjs",
