@@ -5103,21 +5103,24 @@
         },
         {
             "name": "drupal/migrate_upgrade",
-            "version": "3.0.0-rc1",
+            "version": "3.0.0-rc4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/migrate_upgrade",
-                "reference": "8.x-3.0-rc1"
+                "reference": "8.x-3.0-rc4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_upgrade-8.x-3.0-rc1.zip",
-                "reference": "8.x-3.0-rc1",
-                "shasum": "0141d36fb99b166c5e114b946b140780489620e3"
+                "url": "https://ftp.drupal.org/files/projects/migrate_upgrade-8.x-3.0-rc4.zip",
+                "reference": "8.x-3.0-rc4",
+                "shasum": "345d56e98c763e19617d317aaece3cded22670ea"
             },
             "require": {
                 "drupal/core": "*",
                 "drupal/migrate_plus": "*"
+            },
+            "require-dev": {
+                "drupal/coder": "^8"
             },
             "type": "drupal-module",
             "extra": {
@@ -5125,8 +5128,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-rc1",
-                    "datestamp": "1476200639",
+                    "version": "8.x-3.0-rc4",
+                    "datestamp": "1519400285",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -5141,6 +5144,10 @@
                 {
                     "name": "abhishek-anand",
                     "homepage": "https://www.drupal.org/user/468982"
+                },
+                {
+                    "name": "heddn",
+                    "homepage": "https://www.drupal.org/user/1463982"
                 },
                 {
                     "name": "ksenzee",
