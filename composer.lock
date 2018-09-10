@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "050a1d0f9be4c65f24bfb6916a3466c4",
+    "content-hash": "fa9feffb831f2d2686e698d5ba51e624",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4829,17 +4829,17 @@
         },
         {
             "name": "drupal/lightning",
-            "version": "1.15.0",
+            "version": "3.200.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/lightning",
-                "reference": "8.x-1.15"
+                "reference": "8.x-3.200"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning-8.x-1.15-core.zip",
-                "reference": "8.x-1.15",
-                "shasum": "2b615528c40079d16ce590a52259db033229af58"
+                "url": "https://ftp.drupal.org/files/projects/lightning-8.x-3.200-core.zip",
+                "reference": "8.x-3.200",
+                "shasum": "fc5e2401b0759c8062b9c802e7c30a9b210becd9"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -4847,11 +4847,11 @@
             "type": "drupal-profile",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                    "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.15",
-                    "datestamp": "1481918284",
+                    "version": "8.x-3.200",
+                    "datestamp": "1536190980",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4860,7 +4860,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {

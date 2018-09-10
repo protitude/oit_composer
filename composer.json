@@ -246,7 +246,7 @@
         "drupal/key_value": ">1.0",
         "drupal/ldap": ">1.0",
         "drupal/libraries": ">1.0",
-        "drupal/lightning": "^1.0",
+        "drupal/lightning": "^3.0",
         "drupal/linkit": ">1.0",
         "drupal/mailsystem": ">1.0",
         "drupal/masquerade": ">1.0",
