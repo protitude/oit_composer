@@ -173,19 +173,6 @@
                 }
             }
         },
-        "14": {
-            "type": "package",
-            "package": {
-                "name": "drupal/views_eva",
-                "version": "8.1",
-                "type": "drupal-module",
-                "source": {
-                    "url": "https://github.com/ahebrank/eva.git",
-                    "type": "git",
-                    "reference": "8.x-1.x"
-                }
-            }
-        },
         "eleven": {
             "type": "vcs",
             "url": "https://github.com/thememachine/eleven"
@@ -293,7 +280,6 @@
         "drupal/video_embed_field": ">1.0",
         "drupal/views_accordion": ">1.0",
         "drupal/views_data_export": ">1.0",
-        "drupal/views_eva": ">1.0",
         "drupal/views_infinite_scroll": ">1.0",
         "drupal/workbench_moderation": ">1.0",
         "drupal/workspace": ">1.0-alpha",
@@ -310,12 +296,12 @@
         "library/signature_pad": "1.5.3",
         "library/colorbox": "1.0",
         "library/select2": "4.0.1",
-        "ahebrank/eva": "dev-8.x-1.x",
         "library/fontfaceobserver": "2.0.5",
         "drupal/simple_sitemap": "^2.7",
         "drupal/tac_lite": "^1.1",
         "thememachine/eleven": "^8.0@beta",
-        "drupal/imce": "^1.6"
+        "drupal/imce": "^1.6",
+        "drupal/eva": "^1.0"
     },
     "require-dev": {
         "behat/mink": "~1.7",
