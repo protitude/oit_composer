@@ -86,30 +86,6 @@
                 }
             }
         },
-        "7": {
-            "type": "package",
-            "package": {
-                "name": "library/rateit",
-                "version": "1.1.1",
-                "type": "drupal-library",
-                "dist": {
-                    "url": "https://github.com/gjunge/rateit.js/archive/1.1.1.zip ",
-                    "type": "zip"
-                }
-            }
-        },
-        "8": {
-            "type": "package",
-            "package": {
-                "name": "library/signature_pad",
-                "version": "1.5.3",
-                "type": "drupal-library",
-                "dist": {
-                    "url": "https://github.com/szimek/signature_pad/archive/v1.5.3.zip ",
-                    "type": "zip"
-                }
-            }
-        },
         "9": {
             "type": "package",
             "package": {
@@ -246,7 +222,6 @@
         "drupal/key_value": ">1.0",
         "drupal/ldap": ">1.0",
         "drupal/libraries": ">1.0",
-        "drupal/lightning": "^3.0",
         "drupal/linkit": ">1.0",
         "drupal/mailsystem": ">1.0",
         "drupal/masquerade": ">1.0",
@@ -276,7 +251,6 @@
         "drupal/scheduler": ">1.0",
         "drupal/shortcode": ">1.0",
         "drupal/token": ">1.0",
-        "drupal/trash": ">1.0",
         "drupal/video_embed_field": ">1.0",
         "drupal/views_accordion": ">1.0",
         "drupal/views_data_export": ">1.0",
@@ -292,8 +266,6 @@
         "library/jquery.timepicker": "1.11.8",
         "library/jquery.toggles": "4.0.0",
         "library/word-and-character-counter": "1.6.0",
-        "library/rateit": "1.1.1",
-        "library/signature_pad": "1.5.3",
         "library/colorbox": "1.0",
         "library/select2": "4.0.1",
         "library/fontfaceobserver": "2.0.5",

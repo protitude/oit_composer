@@ -4,4 +4,6 @@ status: true
 dependencies: {  }
 id: faq
 label: FAQ
+icon_uuid: null
+description: null
 behavior_plugins: {  }
