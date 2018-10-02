@@ -6514,17 +6514,17 @@
         },
         {
             "name": "drupal/replication",
-            "version": "1.0.0-beta14",
+            "version": "1.0.0-beta15",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/replication",
-                "reference": "8.x-1.0-beta14"
+                "reference": "8.x-1.0-beta15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/replication-8.x-1.0-beta14.zip",
-                "reference": "8.x-1.0-beta14",
-                "shasum": "a5c017c843fd31fa75a1669f3a9d32381cc6265b"
+                "url": "https://ftp.drupal.org/files/projects/replication-8.x-1.0-beta15.zip",
+                "reference": "8.x-1.0-beta15",
+                "shasum": "ca9b88408914234a3e1d4ccd46a1d33a2be2a25b"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -6536,8 +6536,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta14",
-                    "datestamp": "1533305280",
+                    "version": "8.x-1.0-beta15",
+                    "datestamp": "1538056384",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
