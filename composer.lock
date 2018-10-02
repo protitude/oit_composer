@@ -5795,7 +5795,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/node_revision_delete",
-                "reference": "83f44e15c8a5681e8a7f5686a3a6816d2e77ef3c"
+                "reference": "6e44513ac5fa682cadad68fb125089e0d4d6fb3b"
             },
             "require": {
                 "drupal/core": "~8.5"
@@ -5806,8 +5806,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha4+30-dev",
-                    "datestamp": "1534349284",
+                    "version": "8.x-1.0-alpha4+33-dev",
+                    "datestamp": "1538071080",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5841,7 +5841,7 @@
                 "source": "http://cgit.drupalcode.org/node_revision_delete",
                 "issues": "https://www.drupal.org/project/issues/node_revision_delete"
             },
-            "time": "2018-08-27T19:07:36+00:00"
+            "time": "2018-09-27T20:18:12+00:00"
         },
         {
             "name": "drupal/omega",
@@ -7035,7 +7035,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/views_data_export",
-                "reference": "c5aceb1770c73b157c5f14565ac9137fbf549cfc"
+                "reference": "3cb8d78b20fd8810c008fe2e9d7b374a6752625d"
             },
             "require": {
                 "drupal/core": "*",
@@ -7047,8 +7047,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta1+1-dev",
-                    "datestamp": "1531153120",
+                    "version": "8.x-1.0-beta1+6-dev",
+                    "datestamp": "1537288085",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -7090,7 +7090,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/views_data_export"
             },
-            "time": "2018-07-18T17:56:42+00:00"
+            "time": "2018-09-18T16:43:33+00:00"
         },
         {
             "name": "drupal/views_infinite_scroll",
