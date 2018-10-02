@@ -3,3 +3,4 @@ https://www.mtech-llc.com/blog/ada-hernandez/migration-field-collection-d7-parag
 https://gist.github.com/teglia/09c64dd27c6a953537d291dcf42f7fc5
 https://www.drupal.org/project/demo_umami_subprofile
 https://www.drupal.org/project/paragraphs/issues/2897021
+https://www.zivtech.com/blog/how-use-canvas-dialog-drupal-8
