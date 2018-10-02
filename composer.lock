@@ -5244,17 +5244,17 @@
         },
         {
             "name": "drupal/media_entity_instagram",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/media_entity_instagram",
-                "reference": "8.x-1.4"
+                "reference": "8.x-1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/media_entity_instagram-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "2b69b90417f3c458b4db3ba890813c313d381f0e"
+                "url": "https://ftp.drupal.org/files/projects/media_entity_instagram-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "fa2cb0d85dcce47d40cc87f2df216fe154fe31c5"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -5266,8 +5266,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1495556283",
+                    "version": "8.x-1.5",
+                    "datestamp": "1537264380",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5276,7 +5276,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
