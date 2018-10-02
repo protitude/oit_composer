@@ -5691,7 +5691,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/multiversion",
-                "reference": "ea2e71a6e66bd39fcb0f4f54c1e53d009f89de28"
+                "reference": "c8b42baf7b43674a6d02878faaabe55053cc6e77"
             },
             "require": {
                 "drupal/conflict": "^1-beta",
@@ -5710,8 +5710,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta25+6-dev",
-                    "datestamp": "1535531580",
+                    "version": "8.x-1.0-beta26+0-dev",
+                    "datestamp": "1538053680",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5745,7 +5745,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/multiversion"
             },
-            "time": "2018-08-29T11:40:17+00:00"
+            "time": "2018-09-27T13:04:34+00:00"
         },
         {
             "name": "drupal/node_clone",
